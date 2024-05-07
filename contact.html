@@ -17,7 +17,7 @@
         <h1 id="title"> Contact Form</h1>
             <p id="description"><em>Thank you for taking the time to help me improve.</em></p>
         
-        <form id="survey-form">
+        <form id="contact-form">
 
             
             
@@ -27,7 +27,7 @@
                 <label id="date-label" for="date-input">Today's Date (optional) <input id="date-input" type="date" value="contact-date"  /></label>
             </fieldset>
             
-            <fieldset>
+            <fieldset id="reason">
                 <label id="motive-label" for="contact-motive"> What's your reason for reaching out today?
                     <select id="contact-motive" name="motive-selection">
                         <option value="7" >Desktop Bug</option>
@@ -41,7 +41,7 @@
                 </label>
             </fieldset>
             
-            <fieldset>
+            <fieldset id="checkboxes">
                 <legend>Item(s) to Improve  </legend> (check all that apply)
 
                 <label for="exchange-improve"><input id="exchange-improve" name="improvement-type"  type="checkbox" value="exchanges"  /> Exchange </label>
@@ -52,14 +52,14 @@
                 <label for="other-improve">   <input id="other-improve" name="improvement-type" type="checkbox" value="other"  /> Other </label>
             </fieldset>
 
-            <fieldset>
+            <fieldset id="y-n-radio">
                 <legend> Shall we contact you with a response? </legend>
 
                 <label for="yes-response"><input id="yes-response" name="respond" type="radio" value="yes"/> Yes </label>
                 <label for="no-response"><input id="no-response" name="respond" type="radio" value="no" checked/> No </label>
             </fieldset>
 
-            <fieldset>
+            <fieldset id="suggestionbox">
                 <label for="textarea">
                     Comments:
                     <textarea id="textarea" type="text" value="info"></textarea>
