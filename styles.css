@@ -2,7 +2,80 @@
                     INDEX / PRIMARY CSS 
 *********************************************************  */
 
+
+.topnav {
+    /* make nav bar stop meeting Daily Inspiration*/
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.topnav a {
+    /* remove link underline*/
+    text-decoration: none;
+}
+
+
+
+.topnav a:hover {
+    /* highlighter effect on hover*/
+    background-color: rgb(237, 252, 33);
+    color:rgb(39, 38, 41);
+}
+
+/*
+#navdiv {
+    display: block;
+
+}
+*/
+
+
+
 ul {
+/* infuriating combination of MAKE A TOP NAV BAR  */
+
     list-style-type: none;
-    
+    display: inline-flex;
+    justify-content: space-between;
+ /*   float: left;*/
+    text-align: center;
+    padding: 2%;
+    width:96%;
+    max-width: 100%;
+
+}
+
+
+.links {
+/* nav background color */
+
+ /*   display: inline;*/
+    background-color: rgb(233, 240, 235);
+}
+
+
+
+
+#daily-section, #quote-words {
+    display: block;
+  
+}
+
+
+#foot {
+    position: fixed;
+    padding: 2% 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(231, 227, 227);
+    color: rgb(22, 7, 7);
+    text-align: center;
+}
+
+#foot a {
+    /*  LinkedIn link appearance */
+    text-decoration: none;
+    color: rgb(45, 59, 88);
+    font-weight: bold;
 }
