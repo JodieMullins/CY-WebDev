@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
+        <title>Survey Form</title>
+    </head>
+
+
+    <body>
+
+        <h1 id="title">Survey Form</h1>
+            <p id="description"><em>Thank you for taking the time to help me improve.</em></p>
+        
+        <form id="survey-form">
+            
+            <fieldset id="person">
+                <label id="name-label" for="name">Enter Your Full Name: <input id="name" type="text" placeholder="Full Name Here" /></label>
+                <label id="email-label" for="email">Email Address: <input id="email" type="email" placeholder="example@email.com"  required/></label>
+                <label id="number-label" for="age">Your Age (optional) <input id="age" type="number" value="age"  min="16" max="115"/></label>
+            </fieldset>
+            
+            <fieldset>
+                <label id="motive-label" for="contact-motive"> What's your reason for reaching out today?
+                    <select id="contact-motive" name="motive-selection">
+                        <option value="7" >Desktop Bug</option>
+                        <option value="6" >Laptop Bug</option>
+                        <option value="5" >Mobile Bug</option>
+                        <option value="4" >Exciting New Feature</option>
+                        <option value="3" >Praise</option>
+                        <option value="2" >Suggestion</option>
+                        <option value="1" >Emergency</option>
+                    </select>
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Item(s) to Improve  </legend> (check all that apply)
+
+                <label for="exchange-improve"><input id="exchange-improve" name="improvement-type"  type="checkbox" value="exchanges"  /> Exchange </label>
+                <label for="quote-improve">   <input id="quote-improve" name="improvement-type" type="checkbox" value="quotes"  /> Daily Quote </label>
+                <label for="weather-improve"> <input id="weather-improve" name="improvement-type" type="checkbox"  value="weather" /> Weather </label>
+                <label for="feature-improve"> <input id="feature-improve" name="improvement-type" type="checkbox" value="feature"  /> Feature </label>
+                <label for="form-improve">    <input id="form-improve" name="improvement-type" type="checkbox" value="contactform"  /> Contact Form </label>
+                <label for="other-improve">   <input id="other-improve" name="improvement-type" type="checkbox" value="other"  /> Other </label>
+            </fieldset>
+
+            <fieldset>
+                <legend> Shall we contact you with a response? </legend>
+
+                <label for="yes-response"><input id="yes-response" name="respond" type="radio" value="yes"/> Yes </label>
+                <label for="no-response"><input id="no-response" name="respond" type="radio" value="no" checked/> No </label>
+            </fieldset>
+
+            <fieldset>
+                <label for="textarea">
+                    Comments:
+                    <textarea id="textarea" type="text" value="info"></textarea>
+                    
+                </label>
+            </fieldset>
+
+            
+            <label for="submit-button"> 
+                <button id="submit-button" type="submit" value="Submit" name="submit-click">Submit Form</button>
+        
+            </label>
+            
+
+        </form> <!-- END FORM -->
+
+    </body>
+
+
+</html>
