@@ -26,6 +26,12 @@ body {
     size-adjust: 50%;
 }
 
+.homepage-link {
+    /* remove default link display of index.html link*/
+    text-decoration: none;
+    color: black;
+}
+
 
 #gradient-border {
     padding: 1rem;
@@ -87,7 +93,7 @@ ul {
  /*   display: inline;*/
 /*    background-color: rgb(233, 240, 235);*/
     background-color: rgb(231, 227, 227);
-    
+
     /*remove border for now*/
 /*    border: 2px solid rgb(233, 240, 235);*/
 }
