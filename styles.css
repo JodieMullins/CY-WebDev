@@ -3,6 +3,8 @@
 *********************************************************  */
 body {
     background-color: rgb(237, 229, 245);
+    background-color: rgb(231, 227, 227);
+    margin: 0;
 }
 
 #comcan {
@@ -10,15 +12,27 @@ body {
     overflow: hidden;
     font-family: Handjet, monospace, sans-serif;
     font-size: 10vh;
+    
     font-weight:bolder;
     text-overflow: clip;
     text-align: right;
-    text-shadow: 5px 5px 50px rgb(34, 34, 34);
+    text-shadow: 10px 5px 50px rgb(34, 34, 34);
     margin: 0px;
 /*    background-color: rgb(176, 213, 214);*/
 /*    background-color: rgb(231, 227, 227);*/
-    border: 2px solid rgb(231, 227, 227);
-    padding: 2px;
+/*    border: 2px solid rgb(231, 227, 227);*/
+    border-radius: 5pc;
+    padding: 2px 10px;
+    size-adjust: 50%;
+}
+
+
+#gradient-border {
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to left, yellow, white);
+    background: linear-gradient(to left, rgb(231, 227, 227), white);
+    
 }
 
 .topnav {
@@ -73,7 +87,9 @@ ul {
  /*   display: inline;*/
 /*    background-color: rgb(233, 240, 235);*/
     background-color: rgb(231, 227, 227);
-
+    
+    /*remove border for now*/
+/*    border: 2px solid rgb(233, 240, 235);*/
 }
 
 
@@ -88,6 +104,9 @@ ul {
   
 }
 
+#daily-section {
+    margin: 5%;
+}
 
 #foot {
     position: fixed;
@@ -99,7 +118,7 @@ ul {
     color: rgb(22, 7, 7);
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+
 }
 
 #foot a {
