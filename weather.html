@@ -47,10 +47,35 @@
 
                 <div>
                     <p id="pw">
-                        Look up the weather to best plan travel with short notice.
+                        Look up the weather outside of the U.S. to best plan travel with short notice.
                     </p>
                 </div>
 
+            </section>  <!-- END WEATHER LOOKUP -->
+
+            <!-- TEMPERATURE CONVERSION -->
+            <section id="conversion-weather-section">
+                <div id="d-temps">
+
+                    <p id="cel">
+                      <label id="label-c-temp">Celsius</label>
+                      <input id="inputCelsius" type="number" placeholder="Celsius"
+                      oninput="temperatureConverter(this.value)"
+                      onchange="temperatureConverter(this.value)">
+                    </p>
+
+                    <p id="states-temp">Fahrenheit: <span id="outputFahrenheit"></span></p>
+                      
+
+                      
+                      <script>
+                      function temperatureConverter(valNum) {
+                        valNum = parseFloat(valNum);
+                        document.getElementById("outputFahrenheit").innerHTML=(valNum * 1.8) +32 ;
+                      }
+                      </script>
+
+                </div>
             </section>
 
 
@@ -58,7 +83,7 @@
         </main>
 
 
-
+    <link rel="script" href="script.js"> <!--JAVASCRIPT-->
     </body>
 
 </html>

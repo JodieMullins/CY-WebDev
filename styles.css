@@ -148,3 +148,21 @@ ul {
     margin: 2rem;
 }
 
+#d-temps {
+    margin: 4rem;
+    align-items: center;
+    text-align: center;
+}
+
+#inputCelsius {
+    display:block;
+    border-radius: 5%;
+/*    transform: scale(4rem);*/
+    width: 100%;
+    text-align: center;
+}
+
+#inputCelsius:active, #inputCelsius:hover {
+    border: 5px solid greenyellow;
+    
+}
