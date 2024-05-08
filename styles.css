@@ -78,7 +78,8 @@ ul {
 
 
 #main-body {
-    font-family: Ojuju, monospace, sans-serif;
+    font-family: monospace, sans-serif;
+    font: 1em sans-serif;
 }
 
 
@@ -97,11 +98,14 @@ ul {
     background-color: rgb(231, 227, 227);
     color: rgb(22, 7, 7);
     text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 #foot a {
     /*  LinkedIn link appearance */
     text-decoration: none;
     color: rgb(45, 59, 88);
+    
     font-weight: bold;
 }
