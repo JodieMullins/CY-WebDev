@@ -164,5 +164,19 @@ ul {
 
 #inputCelsius:active, #inputCelsius:hover {
     border: 5px solid greenyellow;
-    
+
+}
+
+ 
+@media screen and (max-width: 300px){
+   
+    /* HEADER SHRINKING */
+    a.homepage-link {
+        margin: 10%;
+        padding-right: 5%;
+    } 
+    #comcan {
+        margin: 5%;
+        padding-right: 15%;
+    }
 }
