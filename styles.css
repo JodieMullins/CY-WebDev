@@ -7,11 +7,13 @@
     /* make nav bar stop meeting Daily Inspiration*/
     overflow: hidden;
     max-width: 100%;
+    
 }
 
 .topnav a {
     /* remove link underline*/
     text-decoration: none;
+    color:rgb(37, 93, 145);
 }
 
 
@@ -19,7 +21,7 @@
 .topnav a:hover {
     /* highlighter effect on hover*/
     background-color: rgb(237, 252, 33);
-    color:rgb(39, 38, 41);
+    color:rgb(0, 0, 0);
 }
 
 /*
@@ -42,7 +44,7 @@ ul {
     padding: 2%;
     width:96%;
     max-width: 100%;
-
+    
 }
 
 
@@ -51,6 +53,7 @@ ul {
 
  /*   display: inline;*/
     background-color: rgb(233, 240, 235);
+
 }
 
 
