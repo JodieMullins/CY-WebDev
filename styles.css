@@ -1,7 +1,25 @@
 /* *********************************************************
                     INDEX / PRIMARY CSS 
 *********************************************************  */
+body {
+    background-color: rgb(237, 229, 245);
+}
 
+#comcan {
+    display: block;
+    overflow: hidden;
+    font-family: Handjet, monospace, sans-serif;
+    font-size: 10vh;
+    font-weight:bolder;
+    text-overflow: clip;
+    text-align: right;
+    text-shadow: 5px 5px 50px rgb(34, 34, 34);
+    margin: 0px;
+/*    background-color: rgb(176, 213, 214);*/
+/*    background-color: rgb(231, 227, 227);*/
+    border: 2px solid rgb(231, 227, 227);
+    padding: 2px;
+}
 
 .topnav {
     /* make nav bar stop meeting Daily Inspiration*/
@@ -13,7 +31,8 @@
 .topnav a {
     /* remove link underline*/
     text-decoration: none;
-    color:rgb(37, 93, 145);
+/*    color:rgb(37, 93, 145);*/
+    color:rgb(45, 59, 88);
 }
 
 
@@ -35,7 +54,7 @@
 
 ul {
 /* infuriating combination of MAKE A TOP NAV BAR  */
-
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     list-style-type: none;
     display: inline-flex;
     justify-content: space-between;
@@ -52,11 +71,15 @@ ul {
 /* nav background color */
 
  /*   display: inline;*/
-    background-color: rgb(233, 240, 235);
+/*    background-color: rgb(233, 240, 235);*/
+    background-color: rgb(231, 227, 227);
 
 }
 
 
+#main-body {
+    font-family: Ojuju, monospace, sans-serif;
+}
 
 
 #daily-section, #quote-words {
