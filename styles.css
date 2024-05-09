@@ -7,6 +7,14 @@ body {
     margin: 0;
 }
 
+.meat{
+    font-family: monospace, sans-serif;
+}
+
+section {
+    font-size: 3vh;
+}
+
 #comcan {
     display: block;
     overflow: hidden;
@@ -22,7 +30,7 @@ body {
 /*    background-color: rgb(231, 227, 227);*/
 /*    border: 2px solid rgb(231, 227, 227);*/
     border-radius: 5pc;
-    padding: 2px 10px;
+    padding: 2px 20px;
     size-adjust: 50%;
 }
 
@@ -37,7 +45,7 @@ body {
     padding: 1rem;
     position: relative;
     background: linear-gradient(to left, yellow, white);
-    background: linear-gradient(to left, rgb(231, 227, 227), white);
+    background: linear-gradient(to left, rgb(231, 227, 227), rgb(235, 233, 233));
     
 }
 
@@ -45,7 +53,7 @@ body {
     /* make nav bar stop meeting Daily Inspiration*/
     overflow: hidden;
     max-width: 100%;
-    
+    border-top: 5px dotted rgb(156, 152, 153);
 }
 
 .topnav a {
@@ -99,11 +107,6 @@ ul {
 }
 
 
-#main-body {
-    font-family: monospace, sans-serif;
-    font: 1em sans-serif;
-}
-
 
 #daily-section, #quote-words {
     display: block;
@@ -156,19 +159,28 @@ ul {
 
 #inputCelsius {
     display:block;
-    border-radius: 5%;
+/*    border-radius: 5%;*/
 /*    transform: scale(4rem);*/
     width: 100%;
     text-align: center;
 }
 
-#inputCelsius:active, #inputCelsius:hover {
+/* BOX STYLING */
+/*
+#inputCelsius:active, #inputCelsius:hover, #inputCelsius:focus, #inputCelsius {
+    text-align: center;
+    align-items: center;
+    align-content: center;
     border: 5px solid greenyellow;
-
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    padding: 0;
+    max-width: 50%;
 }
-
+*/
  
-@media screen and (max-width: 300px){
+@media screen and (max-width: 370px){
    
     /* HEADER SHRINKING */
     a.homepage-link {
