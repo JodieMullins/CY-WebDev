@@ -1,4 +1,4 @@
 // enable best practices
-//"use strict";
+"use strict";
 
 
