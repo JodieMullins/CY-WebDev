@@ -20,6 +20,12 @@ section {
     margin: 2rem;
 }
 
+.div-input {
+    margin: 4rem;
+    align-items: center;
+    text-align: center;
+}
+
 #comcan {
     display: block;
     overflow: hidden;
@@ -155,11 +161,11 @@ ul {
                     WEATHER PAGE
 *********************************************************  */
 
-#d-temps {
-    margin: 4rem;
-    align-items: center;
+/*#d-temps {
+        margin: 4rem;
+   align-items: center;
     text-align: center;
-}
+}*/
 
 #inputCelsius {
     display:block;
