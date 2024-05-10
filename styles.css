@@ -9,10 +9,15 @@ body {
 
 .meat{
     font-family: monospace, sans-serif;
+    margin: 5%;
 }
 
 section {
     font-size: 3vh;
+}
+
+.heading-descr {
+    margin: 2rem;
 }
 
 #comcan {
@@ -139,18 +144,16 @@ ul {
     font-weight: bold;
 }
 
+/* *********************************************************
+                    EXCHANGE PAGE
+*********************************************************  */
+
+
+
 
 /* *********************************************************
                     WEATHER PAGE
 *********************************************************  */
-
-#weather-heading{
-    margin: 5%;
-}
-
-#pw {
-    margin: 2rem;
-}
 
 #d-temps {
     margin: 4rem;
