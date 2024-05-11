@@ -57,6 +57,7 @@ section {
     position: relative;
     background: linear-gradient(to left, yellow, white);
     background: linear-gradient(to left, rgb(231, 227, 227), rgb(235, 233, 233));
+    background: linear-gradient(to left, rgb(235, 233, 233), rgb(201, 197, 197));
     
 }
 
