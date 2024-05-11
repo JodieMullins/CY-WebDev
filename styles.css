@@ -26,6 +26,14 @@ section {
     text-align: center;
 }
 
+.inputting-space{
+    display:block;
+/*    border-radius: 5%;*/
+/*    transform: scale(4rem);*/
+    width: 100%;
+    text-align: center;
+}
+
 #comcan {
     display: block;
     overflow: hidden;
@@ -168,6 +176,7 @@ ul {
     text-align: center;
 }*/
 
+
 #inputCelsius {
     display:block;
 /*    border-radius: 5%;*/
@@ -175,6 +184,7 @@ ul {
     width: 100%;
     text-align: center;
 }
+
 
 /* BOX STYLING */
 /*
