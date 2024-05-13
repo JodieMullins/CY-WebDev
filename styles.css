@@ -1,15 +1,15 @@
 body {
-    background-color: #d3d3d3;
+    background-color: #368f8b;
     
 }
 
 
 .logo-throughout {
-    display:inline-flex;
+    display: inline-flex;
     flex-wrap: nowrap;
     margin: 0px;
 
-    width: 15vh;
+    width: 250px;
 /*    border-radius: 50%;
     background-color: #160f29;*/
     padding: 0px;
@@ -23,25 +23,51 @@ body {
 
 }
 
-.search-bars {
-    max-width: 10vh;
-    display:inline-flex;
+.header-search-div {
+    display: inline-flex;
+}
 
+.search-label {
+    justify-content: right;
+    position: relative;
+    flex-direction: column-reverse;
+}
+
+.search-bars {
+    display: flex;
+    max-width: 60%;
+    justify-content: right;
+    justify-items: right;
+    justify-self: right;
+    flex-wrap: nowrap;
 }
 
 
 /* standard nav background appearance*/
 .header-nav-background-div {
-    background-color: #160f29 ;
-    background-color: #368f8b ;
+/*    background-color: #160f29 ;
+    background-color: #368f8b ;*/
     border-radius: 30%;
+}
+
+.header-nav-links-throughout {
+    margin: 2px;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+ /*   border:2px solid #ddbea8;
+    border-radius: 10%;*/
+    color:#ddbea8;
+    font-size: larger;
+    padding: 10px 20%;
 }
 
 
 /* when hovering over nav selections */
 .header-nav-background-div:hover {
-    background-color: #f3dfc1;
-    color:#160f29 ;
+ /*   background-color: #f3dfc1;*/
+    color:#160f29;
     cursor: pointer;
 }
 
@@ -60,12 +86,3 @@ COLOR SCHEME
     padding: 0px;
 }
 
-.header-nav-links-throughout {
-    margin: 2px;
-    list-style: none;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    color:#ddbea8;
-    padding: 20px 10px;
-}
