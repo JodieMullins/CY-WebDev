@@ -18,12 +18,27 @@ body {
     cursor: context-menu;
 }
 
-.create-acc:hover {
+.signup-text:hover {
         /* highlighter effect on hover*/
-    background-color: rgb(237, 252, 33);
+    background-color: rgba(224, 235, 79, 0.4);
+
     color:rgb(0, 0, 0);
+    cursor: cell;
 }
 
+.header-logo-div {
+    margin: 0px;
+ /*   display: grid;*/
+    justify-items: center;
+    padding: 0px;
+}
+
+.header-logo-a {
+    max-width: 60%;
+    justify-content:space-around ;
+    justify-items: center;
+
+}
 
 .logo-throughout {
     display: flex;
@@ -38,6 +53,7 @@ body {
 
 
 }
+
 
 
 .header-nav-div{
@@ -107,6 +123,7 @@ COLOR SCHEME
 
 */
 
+
 @media screen and (max-width: 300px) {
 
     .header-logo-div {
@@ -115,11 +132,11 @@ COLOR SCHEME
         margin: auto auto;
         padding: 0px;
     }
-
+/*
     .header-nav-links-throughout {
         padding: 30px;
     }
-
+*/
     .logo-throughout {
         margin: auto auto;
 /*        display: flex;
@@ -134,4 +151,3 @@ COLOR SCHEME
     }
     
 }
-
