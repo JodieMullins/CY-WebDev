@@ -13,12 +13,13 @@ body {
     padding: 0px 0px;
     font-size: smaller;
 }
-.create-acc:hover {
-        /* highlighter effect on hover*/
-        background-color: rgb(237, 252, 33);
-        color:rgb(0, 0, 0);
-}
 
+/*.create-acc:hover {*/
+        /* highlighter effect on hover*/
+/*    background-color: rgb(237, 252, 33);
+    color:rgb(0, 0, 0);
+}
+*/
 
 .logo-throughout {
     display: flex;
@@ -29,6 +30,7 @@ body {
 /*    border-radius: 50%;
     background-color: #160f29;*/
     padding: 0px;
+    cursor:grab;
 
 
 }
