@@ -16,7 +16,6 @@ body {
  /*   transform: scale(.8);*/
     padding: 0px 0px;
     font-size: smaller;
-    cursor: context-menu;
 }
 
 .signup-text:hover {
