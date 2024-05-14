@@ -1,6 +1,6 @@
 
 body {
-    background-color: #becccb;
+    background-color: #f0f7f6;
     
 }
 
@@ -50,7 +50,7 @@ body {
     background-color: #160f29;*/
     padding: 0px;
     cursor:grab;
-
+ /*   box-shadow: 2px 2px 40px ;*/
 
 }
 
@@ -64,11 +64,13 @@ body {
 .div-header-background {
 /*    justify-content: right;*/
     background-color: #368f8b;
-    background-color: #160f29;
+    background-color: #130638;
+    background-color: #eff1e2d7;
     border-radius: 30%;
-    border: 1px solid #ddbea8;
+    border: 1px solid #3f8091;
     box-shadow: 0 20px 100px #0f0f0f;
     box-shadow: 0 3px 1px #0f0f0f;
+    box-shadow: -1px 5px 3px #0f0f0f;
 }
 
 .header-nav-links-throughout {
@@ -80,7 +82,7 @@ body {
     justify-content: space-around;
  /*   border:2px solid #ddbea8;
     border-radius: 10%;*/
-    color:#ddbea8;
+    color:#328d94;
     font-size: 15px;
     padding: 10px;
 }
@@ -94,7 +96,7 @@ body {
 }
 
 .header-nav-links-throughout:hover {
-    color:#368f8b;
+    color:#242b2a;
 
 }
 
@@ -105,6 +107,10 @@ body {
     justify-items: center;
     max-width: 30%;
     margin: auto auto;
+}
+
+.search-bars {
+    max-width: 70%;
 }
 
 .search-bars, .search-button  {
