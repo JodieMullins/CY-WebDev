@@ -5,21 +5,25 @@ body {
 }
 
 .create-acc {
+    max-width: 15%;
     margin: 0px;
-    display: flex;
+    margin-left: 80%;
+    display: grid;
     justify-content: right;
     justify-items: right;
+    grid-row: end;
  /*   transform: scale(.8);*/
     padding: 0px 0px;
     font-size: smaller;
+    cursor: context-menu;
 }
 
-/*.create-acc:hover {*/
+.create-acc:hover {
         /* highlighter effect on hover*/
-/*    background-color: rgb(237, 252, 33);
+    background-color: rgb(237, 252, 33);
     color:rgb(0, 0, 0);
 }
-*/
+
 
 .logo-throughout {
     display: flex;
