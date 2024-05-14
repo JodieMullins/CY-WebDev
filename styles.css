@@ -5,9 +5,10 @@ body {
 }
 
 .create-acc {
+    width: fit-content;
     max-width: 15%;
     margin: 0px;
-    margin-left: 80%;
+    margin-left: 85%;
     display: grid;
     justify-content: right;
     justify-items: right;
@@ -70,10 +71,12 @@ body {
     border: 1px solid #3f8091;
     box-shadow: 0 20px 100px #0f0f0f;
     box-shadow: 0 3px 1px #0f0f0f;
-    box-shadow: -1px 5px 3px #0f0f0f;
+    box-shadow: 0px 2px 3px 3px #0f0f0f;
 }
 
-.header-nav-links-throughout {
+/*.header-nav-links-throughout */
+/* .home-throughout, .seasonal-throughout, .account-throughout  */
+.header-nav-links-throughout{
     margin: 5px;
     margin-top: 0px;
     list-style: none;
@@ -87,17 +90,9 @@ body {
     padding: 10px;
 }
 
-/* when hovering over nav selections */
-.header-nav-background-div:hover {
-/*    background-color: #246a73;
-    border: 2px solid #f3dfc1;
-    color:#160f29;*/
-    cursor: pointer;
-}
-
-.header-nav-links-throughout:hover {
+.home-throughout:hover, .seasonal-throughout:hover, .account-throughout:hover {
     color:#242b2a;
-
+    cursor: pointer;
 }
 
 
