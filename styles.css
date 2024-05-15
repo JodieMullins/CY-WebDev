@@ -4,41 +4,15 @@ body {
     
 }
 
-.create-acc {
-    width: fit-content;
-    max-width: 15%;
-    margin: 0px;
-    margin-left: 85%;
-    display: grid;
-    justify-content: right;
-    justify-items: right;
-    grid-row: end;
- /*   transform: scale(.8);*/
-    padding: 0px 0px;
-    font-size: smaller;
-}
-
-.signup-text:hover {
-        /* highlighter effect on hover*/
-    background-color: rgba(224, 235, 79, 0.4);
-
-    color:rgb(0, 0, 0);
-    cursor: cell;
-}
-
-.header-logo-div {
-    margin: 0px;
- /*   display: grid;*/
-    justify-items: center;
-    padding: 0px;
-}
 
 .header-logo-a {
     max-width: 60%;
+    width: fit-content;
     justify-content:space-around ;
     justify-items: center;
 
 }
+
 
 .logo-throughout {
     display: flex;
@@ -59,25 +33,16 @@ body {
 .header-nav-div{
     justify-content: space-around;
     padding: 0px 5px;
+    box-shadow: 0px 0px 5px 0px #0f0f0f ;
+    border-radius: 20px;
 }
 
-.div-header-background {
-/*    justify-content: right;*/
-    background-color: #368f8b;
-    background-color: #130638;
-    background-color: #eff1e2d7;
-    border-radius: 30%;
-    border: 1px solid #3f8091;
-    box-shadow: 0 20px 100px #0f0f0f;
-    box-shadow: 0 3px 1px #0f0f0f;
-    box-shadow: 0px 2px 3px 3px #0f0f0f;
-}
 
 /*.header-nav-links-throughout */
 /* .home-throughout, .seasonal-throughout, .account-throughout  */
 .header-nav-links-throughout{
-    margin: 5px;
-    margin-top: 0px;
+/*    margin: 5px;
+    margin-top: 0px;*/
     list-style: none;
     display: flex;
     flex-wrap: nowrap;
@@ -92,6 +57,7 @@ body {
 .home-throughout:hover, .seasonal-throughout:hover, .account-throughout:hover {
     color:#242b2a;
     cursor: pointer;
+ /*   box-shadow: 1px 1px 5px 1px #0f0f0f;*/
 }
 
 
