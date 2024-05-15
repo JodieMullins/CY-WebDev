@@ -61,22 +61,18 @@ body {
 }
 
 
-.li-search{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    max-width: 30%;
-    margin: auto auto;
+.div-search{
+    display: grid;
+    place-items: center;
 }
 
 .search-bars {
-    max-width: 70%;
+    max-width: 60%;
+    border-radius: 30px;
 }
-
-.search-bars, .search-button  {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+.search-button  {
+    margin: 2px 0px;
+    border-radius: 30px;
 }
 
 /* 
