@@ -4,6 +4,9 @@ body {
     
 }
 
+.logo-div {
+    display:flex;
+}
 
 .header-logo-a {
     display:flex;
