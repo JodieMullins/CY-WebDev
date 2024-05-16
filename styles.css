@@ -6,20 +6,20 @@ body {
 
 
 .header-logo-a {
-    display:grid;
-    width: fit-content;
-    width: -moz-fit-content;
-    justify-content:space-around ;
-    justify-items: center;
+    display:flex;
+/*    width: fit-content;
+    width: -moz-fit-content;*/
+    justify-content:start;
 
 }
 
 
 .logo-throughout {
-    display: grid;
-    width: 20%;
-/*    border-radius: 50%;
-    background-color: #160f29;*/
+    display: flex;
+    width: 25vh;
+    border: 2px solid #f3dfc1;
+   border-radius: 10px;
+    background-color: #160f29;
     padding: 0px;
     cursor:grab;
  /*   box-shadow: 2px 2px 40px ;*/
@@ -60,8 +60,8 @@ body {
 
 
 .div-search{
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: end;
 }
 
 .search-bars {
@@ -80,8 +80,7 @@ body {
 
 
 .search-button  {
-    display:grid;
-    margin: 5px 0px 0px 0px;
+    margin: 10px 0px 0px 5px;
     border: 1px solid #160f29;
     border-radius: 30px;
 }
