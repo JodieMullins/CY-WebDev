@@ -6,8 +6,9 @@ body {
 
 
 .header-logo-a {
-    max-width: 60%;
+    display:grid;
     width: fit-content;
+    width: -moz-fit-content;
     justify-content:space-around ;
     justify-items: center;
 
@@ -79,7 +80,7 @@ body {
 
 
 .search-button  {
-    display:inline;
+    display:grid;
     margin: 5px 0px 0px 0px;
     border: 1px solid #160f29;
     border-radius: 30px;
