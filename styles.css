@@ -67,7 +67,7 @@ body {
     cursor: pointer;
     padding: 10px;
     border-radius: 20px;
-    box-shadow: 1px 1px 5px 1px #0f0f0f;
+    box-shadow: 1px 1px 2px 1px #0f0f0f;
     font-size: larger;
 }
 
@@ -88,7 +88,7 @@ body {
     color:#160f29;
 }
 .search-bars:hover, .search-bars:hover::selection {
-    background-color: #f0f7f6;
+    background-color: #f3dfc1;
 }
 
 
@@ -100,7 +100,7 @@ body {
 
 .search-button:hover {
     background-color: #f3dfc1;
-    border: 1px solid #368f8b;
+    border: 5px solid #368f8b;
 }
 
 /* 
@@ -113,6 +113,23 @@ COLOR SCHEME
 
 */
 
+/**********************************************************
+                        SEASONAL CSS
+**********************************************************/
+
+@font-face {
+    font-family: vonique-64;
+    src: url(./fonts/vonique-64/Vonique64.ttf)
+}
+
+
+
+
+
+
+/**********************************************************
+                        MEDIA QUERIES 
+**********************************************************/
 
 @media screen and (max-width: 300px) {
 
@@ -122,11 +139,7 @@ COLOR SCHEME
         margin: auto auto;
         padding: 0px;
     }
-/*
-    .header-nav-links-throughout {
-        padding: 30px;
-    }
-*/
+
     .logo-throughout {
         margin: auto auto;
 /*        display: flex;
@@ -141,3 +154,5 @@ COLOR SCHEME
     }
     
 }
+
+
