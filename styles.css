@@ -117,6 +117,14 @@ body {
     border: 5px solid #368f8b;
 }
 
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 12
+  }
+
 /* 
 COLOR SCHEME
 #ddbea8 # salmony
