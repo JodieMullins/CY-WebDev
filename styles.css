@@ -87,7 +87,7 @@ body {
     box-shadow: 1px 0px 10px 1px #368f8b;
     color:#160f29;
 }
-.search-bars:hover, .search-bars:hover::selection {
+.search-bars:hover, .search-bars:hover::selection, .search-bars:hover:active {
     background-color: #f3dfc1;
 }
 
