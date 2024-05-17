@@ -56,8 +56,7 @@ body {
 .header-nav-links-throughout{
 
     font-weight: 100;
-/*    margin: 0px;
-    margin-top: 0px;*/
+    margin: 1vh;
     list-style: none;
     display: flex;
     flex-wrap: nowrap;
@@ -92,8 +91,9 @@ body {
 
 .search-bars {
     display:inline;
-    background-color: #dcfafc;
     max-width: 60%;
+    background-color: #dcfafc;
+    margin: 1vh 0;
 /*    border: 1px solid #160f29;*/
     border: 0px;
     border-radius: 30px;
@@ -144,6 +144,30 @@ h1 {
     display:flex;
     justify-content: center;
     justify-items: center;
+}
+
+.div-foot {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+footer {
+    font-size: small;
+    position: fixed; 
+    bottom: 0;
+/*    left: 40%;
+    right: 40%;*/
+    margin: 4px auto;
+
+}
+
+.foot-link {
+    text-decoration: none;
+    color: #328d94;
 }
 
 /**********************************************************
