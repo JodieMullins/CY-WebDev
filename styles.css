@@ -16,7 +16,7 @@
 
 body {
     background-color: #f0f7f6;
-    
+    font-family: sans-serif, monospace;
 }
 
 
@@ -54,7 +54,7 @@ body {
 }
 
 .header-nav-links-throughout{
-    font-family: sans-serif, monospace;
+
     font-weight: 100;
 /*    margin: 0px;
     margin-top: 0px;*/
@@ -138,6 +138,12 @@ h1 {
     padding: 3% 3%;
     justify-content: center;
 
+}
+
+.h1-descriptions {
+    display:flex;
+    justify-content: center;
+    justify-items: center;
 }
 
 /**********************************************************
