@@ -1,8 +1,26 @@
+/**********************************************************
+                HOME PAGE & ALL HEADERS
+**********************************************************/
+
+@font-face {
+    font-family: "Vonique64";
+    src: local("Vonique64.ttf"),
+        url("./fonts/vonique-64/Vonique64.ttf");
+}
+
+@font-face {
+    font-family: "audiowide";
+    src: local("Audiowide-Regular.ttf"),
+        url("./fonts/Audiowide/Audiowide-Regular.ttf");
+}
+
 
 body {
     background-color: #f0f7f6;
     
 }
+
+
 
 .logo-div {
     display:flex;
@@ -13,9 +31,7 @@ body {
     width: fit-content;
     width: -moz-fit-content;
     justify-content:start;
-
 }
-
 
 .logo-throughout {
     display: flex;
@@ -26,11 +42,10 @@ body {
     padding: 0px;
     cursor:pointer;
  /*   box-shadow: 2px 2px 40px ;*/
-
 }
 
 
-
+/* whole header area */
 .header-nav-div{
     justify-content: space-around;
     padding: 0px 5px;
@@ -39,6 +54,8 @@ body {
 }
 
 .header-nav-links-throughout{
+    font-family: sans-serif, monospace;
+    font-weight: 100;
 /*    margin: 0px;
     margin-top: 0px;*/
     list-style: none;
@@ -57,7 +74,6 @@ body {
     color:#328d94;
 }
 
-
 .home-nav-button:hover, .seasonal-nav-button:hover, .promo-nav-button:hover, .contact-nav-button:hover{
     background-color: #f3dfc1;
     color:#242b2a;
@@ -68,7 +84,7 @@ body {
     font-size: larger;
 }
 
-
+/* send search bar area to the right of page */
 .div-search{
     display: flex;
     justify-content: end;
@@ -115,9 +131,10 @@ COLOR SCHEME
                         SEASONAL CSS
 **********************************************************/
 
-@font-face {
-    font-family: vonique-64;
-    src: url(./fonts/vonique-64/Vonique64.ttf)
+h1 {
+    font-family: "audiowide";
+/*    letter-spacing: 1vw;*/
+    font-weight: 600;
 }
 
 /**********************************************************
