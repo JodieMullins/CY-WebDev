@@ -10,8 +10,8 @@ body {
 
 .header-logo-a {
     display:flex;
-/*    width: fit-content;
-    width: -moz-fit-content;*/
+    width: fit-content;
+    width: -moz-fit-content;
     justify-content:start;
 
 }
@@ -38,11 +38,8 @@ body {
     border-radius: 20px;
 }
 
-
-/*.header-nav-links-throughout */
-/* .home-throughout, .seasonal-throughout, .account-throughout  */
 .header-nav-links-throughout{
-/*    margin: 5px;
+/*    margin: 0px;
     margin-top: 0px;*/
     list-style: none;
     display: flex;
@@ -89,6 +86,7 @@ body {
 }
 .search-bars:hover, .search-bars:hover::selection, .search-bars:hover:active {
     background-color: #f3dfc1;
+    padding: 2vh;
 }
 
 
