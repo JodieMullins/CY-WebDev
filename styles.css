@@ -34,7 +34,7 @@ body {
 .header-nav-div{
     justify-content: space-around;
     padding: 0px 5px;
-    box-shadow: 0px 0px 5px 0px #0f0f0f ;
+    box-shadow: 0px 0px 2px 0px #0f0f0f ;
     border-radius: 20px;
 }
 
@@ -55,10 +55,20 @@ body {
     padding: 10px;
 }
 
-.home-throughout:hover, .seasonal-throughout:hover, .account-throughout:hover {
+.home-nav-button, .seasonal-nav-button, .promo-nav-button {
+    text-decoration: none;
+    color:#328d94;
+}
+
+
+.home-nav-button:hover, .seasonal-nav-button:hover, .promo-nav-button:hover{
+    background-color: #f3dfc1;
     color:#242b2a;
     cursor: pointer;
- /*   box-shadow: 1px 1px 5px 1px #0f0f0f;*/
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px #0f0f0f;
+    font-size: larger;
 }
 
 
