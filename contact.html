@@ -71,9 +71,64 @@
             <h1>REACH OUT</h1>
             <p id="contact-descr" class="h1-descriptions"> We'd love to hear from you! </p>
 
-            <section>
+            <form id="contact-form">
 
-            </section>
+            
+            
+                <fieldset id="person">
+                    <label id="name-label" for="name">Enter Your Full Name: <input id="name" type="text" placeholder="Full Name Here" /></label>
+                    <label id="email-label" for="email">Email Address: <input id="email" type="email" placeholder="example@email.com"  required/></label>
+                    <label id="date-label" for="date-input">Today's Date (optional) <input id="date-input" type="date" value="contact-date"  /></label>
+                </fieldset>
+                
+                <fieldset id="reason">
+                    <label id="motive-label" for="contact-motive"> What's your reason for reaching out today?
+                        <select id="contact-motive" name="motive-selection">
+                            <option value="7" >Desktop Bug</option>
+                            <option value="6" >Laptop Bug</option>
+                            <option value="5" >Mobile Bug</option>
+                            <option value="4" >Exciting New Feature</option>
+                            <option value="3" >Praise</option>
+                            <option value="2" >Suggestion</option>
+                            <option value="1" >Emergency</option>
+                        </select>
+                    </label>
+                </fieldset>
+                
+                <fieldset id="checkboxes">
+                    <legend>Item(s) to Improve  </legend> (check all that apply)
+    
+                    <label for="exchange-improve"><input id="exchange-improve" name="improvement-type"  type="checkbox" value="exchanges"  /> Exchange </label>
+                    <label for="quote-improve">   <input id="quote-improve" name="improvement-type" type="checkbox" value="quotes"  /> Daily Quote </label>
+                    <label for="weather-improve"> <input id="weather-improve" name="improvement-type" type="checkbox"  value="weather" /> Weather </label>
+                    <label for="feature-improve"> <input id="feature-improve" name="improvement-type" type="checkbox" value="feature"  /> Feature </label>
+                    <label for="form-improve">    <input id="form-improve" name="improvement-type" type="checkbox" value="contactform"  /> Contact Form </label>
+                    <label for="other-improve">   <input id="other-improve" name="improvement-type" type="checkbox" value="other"  /> Other </label>
+                </fieldset>
+    
+                <fieldset id="y-n-radio">
+                    <legend> Shall we contact you with a response? </legend>
+    
+                    <label for="yes-response"><input id="yes-response" name="respond" type="radio" value="yes"/> Yes </label>
+                    <label for="no-response"><input id="no-response" name="respond" type="radio" value="no" checked/> No </label>
+                </fieldset>
+    
+                <fieldset id="suggestionbox">
+                    <label for="textarea">
+                        Comments:
+                        <textarea id="textarea" type="text" value="info"></textarea>
+                        
+                    </label>
+                </fieldset>
+    
+                
+                <label for="submit-button"> 
+                    <button id="submit-button" type="submit" value="Submit" name="submit-click">Submit Form</button>
+            
+                </label>
+                        
+                
+            </form> <!-- END FORM -->
         </main>
 
 
