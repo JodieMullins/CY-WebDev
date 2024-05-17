@@ -55,13 +55,13 @@ body {
     padding: 10px;
 }
 
-.home-nav-button, .seasonal-nav-button, .promo-nav-button {
+.home-nav-button, .seasonal-nav-button, .promo-nav-button, .contact-nav-button {
     text-decoration: none;
     color:#328d94;
 }
 
 
-.home-nav-button:hover, .seasonal-nav-button:hover, .promo-nav-button:hover{
+.home-nav-button:hover, .seasonal-nav-button:hover, .promo-nav-button:hover, .contact-nav-button:hover{
     background-color: #f3dfc1;
     color:#242b2a;
     cursor: pointer;
@@ -122,9 +122,13 @@ COLOR SCHEME
     src: url(./fonts/vonique-64/Vonique64.ttf)
 }
 
+/**********************************************************
+                        PROMO CSS
+**********************************************************/
 
-
-
+/**********************************************************
+                        CONTACT CSS
+**********************************************************/
 
 
 /**********************************************************
