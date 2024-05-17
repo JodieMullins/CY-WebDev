@@ -187,8 +187,11 @@ footer {
                         PROMO CSS
 **********************************************************/
 #promo-shoe {
+    display: block;
     max-width: 100%;
     height: auto;
+    border-radius: 10%;
+    border: 2px solid #160f29;
 }
 
 
@@ -234,13 +237,10 @@ footer {
     padding-left: 16px;
     padding-right: 16px;
     position: relative;
-    text-align: left;
-    transition: box-shadow .15s,transform .15s;
-    touch-action: manipulation;
+    text-align: center;
     white-space: nowrap;
-    will-change: box-shadow , transform;
     font-size: 18px;
-    opacity: .8;
+ /*   opacity: .8;*/
     margin-bottom: 20%;
     padding: 8px;
 }
