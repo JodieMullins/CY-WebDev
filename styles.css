@@ -141,6 +141,7 @@ h1 {
     font-family: "audiowide";
     letter-spacing: 1vw;
     font-weight: 600;
+    text-transform: uppercase;
     border-radius: 30px;;
     box-shadow: 3px 3px 1px 0px #328d94;
     padding: 1vh 3%;
@@ -165,7 +166,7 @@ h1 {
 
 footer {
     font-size: small;
-    position: fixed; 
+    position: relative; 
     bottom: 0;
 /*    left: 40%;
     right: 40%;*/
@@ -189,8 +190,24 @@ footer {
 /**********************************************************
                         CONTACT CSS
 **********************************************************/
+#contact-form {
+    text-align: center;
+    margin-top: 10%;
+}
 
+.contact-fieldsets {
+    border: none;
+    margin: 5%;
+}
 
+.contact-labels {
+    display:block;
+    margin: 1%;
+}
+
+#contactform-submit-button {
+    margin-bottom: 20%;
+}
 
 /**********************************************************
                         MEDIA QUERIES 
