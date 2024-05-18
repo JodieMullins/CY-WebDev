@@ -65,7 +65,7 @@ body {
     justify-content: space-around;
  /*   border:2px solid #ddbea8;
     border-radius: 10%;*/
-    color:#328d94;
+    color:#160f29;
     font-size: 15px;
     padding: 10px;
 
@@ -73,7 +73,7 @@ body {
 
 .home-nav-button, .seasonal-nav-button, .promo-nav-button, .contact-nav-button {
     text-decoration: none;
-    color:#328d94;
+    color:#160f29;
 
 }
 
@@ -186,7 +186,7 @@ footer {
 
 .foot-link {
     text-decoration: none;
-    color: #328d94;
+    color: #160f29;
 }
 
 
