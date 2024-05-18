@@ -104,7 +104,7 @@ body {
 /*    border: 1px solid #160f29;*/
     border: 0px;
     border-radius: 30px;
-    box-shadow: 1px 0px 10px 1px #368f8b;
+/*    box-shadow: 1px 0px 10px 1px #368f8b;*/
     color:#160f29;
 }
 .search-bars:hover, .search-bars:hover::selection, .search-bars:hover:active {
