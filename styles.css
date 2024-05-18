@@ -121,7 +121,8 @@ body {
 
 .search-button:hover {
     background-color: #f3dfc1;
-    border: 5px solid #368f8b;
+    border: 3px solid #368f8b;
+    cursor:pointer;
 }
 
 .material-symbols-outlined {
