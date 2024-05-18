@@ -1,5 +1,5 @@
 /**********************************************************
-                HOME PAGE & ALL HEADERS
+                HOME PAGE & ALL HEADERS / FOOTERS
 **********************************************************/
 @font-face {
     font-family: "Vonique64";
@@ -125,6 +125,7 @@ body {
     cursor:pointer;
 }
 
+/* Magnifying Glass icon*/
 .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
@@ -186,6 +187,13 @@ footer {
 .foot-link {
     text-decoration: none;
     color: #328d94;
+}
+
+
+/*******    HOME PAGE   ***********/
+
+#homepage-main {
+    margin-bottom: 40%;
 }
 
 /**********************************************************
