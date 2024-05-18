@@ -74,18 +74,18 @@
 
             <section>
 
-                <div id="wrapper-shoe-size-div">
+                <div name="shoe-size-converter" id="wrapper-shoe-size-div">
                     <h4> Shoe Size Conversion </h4>
                     <p> Enter your US shoe size to find the best fit across any and all styles.</p>
     <!-- Would love to include feature that displays all available shoes in fitting sizes -->
                     <div id="container-shoe-size-div">
-                        <label id="label-user-shoe-size" for="ui-shoe-size"><input id="ui-shoe-size" type="number" value="shoe-size" min="2" max="14" placeholder="Size" /></label>
+                        <label id="label-user-shoe-size" for="ui-shoe-size" name="u-s-size-entry"><input id="ui-shoe-size" name="u-s-shoe-size-number-entry" type="number" value="shoe-size" min="2" max="14" placeholder="Size" /></label>
                         
-                        <fieldset>
+                        <fieldset id="f-m-y-radios" >
 
-                            <label id="label-user-shoe-style-f" for="user-shoe-style-m"><input id="user-shoe-style-f" type="radio" value="w-style" />W</label> 
+                            <label id="label-user-shoe-style-f" for="user-shoe-style-m" name="women-entry"><input id="user-shoe-style-f" type="radio" value="w-style" name="u-s-shoe-style-womens"  />W</label> 
                     
-                            <label id="label-user-shoe-style-m" for="user-shoe-style-m"><input id="user-shoe-style-m" type="radio" value="m-y-style" />M / Y</label>    
+                            <label id="label-user-shoe-style-m" for="user-shoe-style-m" name="youth-men-entry"><input id="user-shoe-style-m" type="radio" value="m-y-style" name="u-s-shoe-style-mens-and-youth" />M / Y</label>    
                             
                         </div> <!-- container div -->
 

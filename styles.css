@@ -192,9 +192,21 @@ footer {
 
 /*******    HOME PAGE   ***********/
 
-#homepage-main {
-    margin-bottom: 40%;
+
+
+#wrapper-shoe-size-div {
+    margin: 0px 1vh;
 }
+
+/* User Selections */
+#container-shoe-size-div {
+    display: flex;
+}
+
+#f-m-y-radios {
+    border: none;
+}
+
 
 /**********************************************************
                         SEASONAL CSS
