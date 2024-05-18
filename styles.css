@@ -251,7 +251,8 @@ footer {
     color: #f3dfc1;
     cursor:crosshair ;
     display: inline-flex;
-    font-family: sans-serif;
+    font-family: vonique64, sans-serif;
+    letter-spacing: 2px;;
     font-weight: bold;
     height: 48px;
     justify-content: center;
