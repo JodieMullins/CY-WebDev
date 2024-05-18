@@ -195,6 +195,14 @@ footer {
     border: 2px solid #160f29;
 }
 
+#promo-shoe-name {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: vonique64;
+    letter-spacing: 3px;
+
+}
+
 
 /**********************************************************
                         CONTACT CSS
