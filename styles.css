@@ -109,7 +109,7 @@ body {
 }
 .search-bars:hover, .search-bars:hover::selection, .search-bars:hover:active {
     background-color: #f3dfc1;
-    padding: 2vh;
+    padding: 1vh;
 }
 
 
