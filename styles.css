@@ -194,20 +194,6 @@ footer {
 
 
 
-#wrapper-shoe-size-div {
-    margin: 0px 1vh;
-    border: 2px solid #368f8b;
-    padding: 2vh 3vh;
-}
-
-/* User Selections */
-#container-shoe-size-div {
-    display: flex;
-}
-
-#f-m-radios {
-    border: none;
-}
 
 
 /**********************************************************
