@@ -72,6 +72,34 @@
 
  <!--          <h1> KQ FASHION </h1> --> 
 
+
+ <!-- TEMPERATURE CONVERSION -->
+            <section id="conversion-weather-section" class="sect">
+                <div id="d-temps" class="div-input">
+
+                    <h3 id="hp-temp-question"> Is it hot enough to wear those shoes?!</h3>
+
+                        <p id="cel" class="inputting-space">
+                        <label id="label-c-temp">Celsius</label>
+                        <input id="inputCelsius" type="number" placeholder="C"
+                        oninput="temperatureConverter(this.value)"
+                        onchange="temperatureConverter(this.value)" />
+                        </p>
+
+                        <p id="states-temp">Fahrenheit: <span id="outputFahrenheit"></span></p>
+                        
+
+                    
+                    <script>
+                    function temperatureConverter(valNum) {
+                        valNum = parseFloat(valNum);
+                        document.getElementById("outputFahrenheit").innerHTML=(valNum * 1.8) +32 ;
+                    }
+                    </script>
+
+                </div>
+            </section>
+
             <section>
 
                 
