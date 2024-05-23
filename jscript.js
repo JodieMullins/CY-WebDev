@@ -6,6 +6,12 @@
  * 
  ***/
 
+function temperatureConverter(valNum) {
+    
+    // convert user string input to float
+    valNum = parseFloat(valNum);
 
-
-
+    // grab this item and display the output of 
+    // an equation to translate Celcius into Fahrenheit 
+    document.getElementById("outputFahrenheit").innerHTML=(valNum * 1.8) +32 ;
+}
