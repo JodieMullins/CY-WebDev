@@ -206,10 +206,12 @@ footer {
     background-color: #328d94;
     border-radius: 30px;
     margin: 0px auto;
-
+    border: 2px double #242b2a;
 }
 
 .div-input {
+    justify-content: center;
+    text-align: center;
     margin: 0px 3vh 30% 3vh;
 }
 
