@@ -6,14 +6,14 @@ This repository utilizes HTML, CSS, and JavaScript to create what a small websit
 
 Features utilized in this project: 
 
-[x] Responsive Design {Best Practice}
+- [x] Responsive Design {Best Practice}
 
-[] Integrate a third-party API into your project. {REQ}
+- [] Integrate a third-party API into your project. {REQ}
 
-[x] Convert user input between two formats and display the result. (e.g. Fahrenheit to Celcius, kilograms to pounds, etc) {Intermediate}
+- [x] Convert user input between two formats and display the result. (e.g. Fahrenheit to Celcius, kilograms to pounds, etc) {Intermediate}
 
-[] Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event) {Intermediate}
+- [] Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event) {Intermediate}
 
-[] Create a form and store the submitted values using an external API (e.g. a contact form, survey, etc). {Intermediate}
+- [] Create a form and store the submitted values using an external API (e.g. a contact form, survey, etc). {Intermediate}
 
-[] Implement modern interactive UI features (e.g. table/data sorting, autocomplete, drag-and-drop, calendar-date-picker, etc) {Intermediate}
+- [] Implement modern interactive UI features (e.g. table/data sorting, autocomplete, drag-and-drop, calendar-date-picker, etc) {Intermediate}
