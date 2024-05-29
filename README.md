@@ -5,7 +5,7 @@ This repository is a continuation of that idea, showcasing a small website actin
 
 DISCLAIMER: This site purposefully does NOT implement a full shopping cart utility at this time, and no real payments may be processed. 
 
-===========
+------------------------------------------------------------------------------------
 
 This repository utilizes HTML, CSS, and JavaScript to create what a small website may look like. 
 
