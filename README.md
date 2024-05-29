@@ -1,6 +1,9 @@
 Code:You Web Development Keystone Project: KQ Fashion Site
 
-As some context, I completed Code:You's Data Analysis cohort in December 2023. In that time, I created the small business idea of selling hand-designed shoes to collect data from. This repository is a continuation of that idea, showcasing a small website acting as a client-side application for customers to input custom shoe orders. 
+As some context, I completed Code:You's Data Analysis cohort in December 2023. In that time, I created the small business idea of selling hand-designed shoes to collect data from. This repository is a continuation of that idea, showcasing a small website acting as a client-side application for customers to browse custom shoe selections and input a contact form as necessary. 
+
+DISCLAIMER: This site purposefully does NOT implement a full shopping cart utility at this time, and no real payments may be processed. 
+
 
 This repository utilizes HTML, CSS, and JavaScript to create what a small website may look like. 
 
