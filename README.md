@@ -21,4 +21,4 @@ Features utilized in this project:
 
 - [] Create a form and store the submitted values using an external API (e.g. a contact form, survey, etc). {Intermediate} [Contact]
 
-- [] Implement modern interactive UI features (e.g. table/data sorting, autocomplete, drag-and-drop, calendar-date-picker, etc) {Intermediate} 
+- [] Implement modern interactive UI features (e.g. table/data sorting, autocomplete, drag-and-drop, calendar-date-picker, etc) {OPTIONAL} {Intermediate} 
