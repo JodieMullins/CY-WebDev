@@ -269,6 +269,10 @@ footer {
     font-size: 14px;
 }
 
+#contact-descr {
+    text-decoration: underline;
+}
+
 .contact-fieldsets {
     border: none;
     margin: 5%;
