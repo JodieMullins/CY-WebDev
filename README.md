@@ -29,7 +29,7 @@ Features utilized in this project:
 
 Legend: 
 
-[x] Completed Item / Feature Present
+- [x] Completed Item / Feature Present
 
 { Reason for Inclusion }
 
