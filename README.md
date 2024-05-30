@@ -2,8 +2,8 @@
 
 ## KQ Fashion Site
 
-As some context, I completed Code:You's Data Analysis cohort in December 2023. In that time, I created the small business idea of selling hand-designed shoes from which to collect sales data, titled [Kicks Quest](https://github.com/JodieMullins/KicksQuest). 
-This repository is a loose continuation of that, showcasing a basic website acting as a client-side application for customers to browse custom shoe selections and input a contact form. 
+As some context, I completed Code:You's Data Analysis cohort in December 2023. In that time, I created the small business idea of selling hand-painted shoes from which to collect sales data, titled [Kicks Quest](https://github.com/JodieMullins/KicksQuest). 
+This repository is a loose continuation of that, showcasing a basic website acting as a client-side application for customers to browse customized shoes and input a contact form. 
 
 DISCLAIMER: This site purposefully does NOT implement a full shopping cart utility at this time, and no real or fake payments may be processed. All images have been created using generative AI services, such as wombo/dream, and no real products are available through this proof of concept.
 

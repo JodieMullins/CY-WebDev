@@ -257,6 +257,14 @@ footer {
 
 }
 
+#promo-info-sec {
+    margin-bottom: 25vh;
+}
+
+
+#promo-info-div {
+    border: 2px solid #368f8b;
+}
 
 /**********************************************************
                         CONTACT CSS
