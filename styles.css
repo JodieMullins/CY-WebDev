@@ -261,9 +261,17 @@ footer {
     margin-bottom: 25vh;
 }
 
-
 #promo-info-div {
     border: 2px solid #368f8b;
+}
+
+#bid-price {
+    text-align: center;
+    
+}
+
+#promo-features-list {
+    list-style:inside circle;
 }
 
 /**********************************************************
