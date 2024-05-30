@@ -19,7 +19,7 @@ Features utilized in this project:
 
 - [x] Convert user input between two formats and display the result. (e.g. Fahrenheit to Celcius, kilograms to pounds, etc) {Intermediate} [Home](http://127.0.0.1:3000/index.html)
 
-- [] Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event) {Intermediate} [Promo](http://127.0.0.1:3000/promo.html)
+- [x] Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event) {Intermediate} [Promo](http://127.0.0.1:3000/promo.html)
 
 - [] Create a form and store the submitted values using an external API (e.g. a contact form, survey, etc). {Intermediate} [Contact](http://127.0.0.1:3000/contact.html)
 
