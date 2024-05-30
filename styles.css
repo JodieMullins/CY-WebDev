@@ -217,6 +217,14 @@ footer {
     margin: 0px 3vh 30% 3vh;
 }
 
+#front-page-shoe {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: vonique64;
+    letter-spacing: 3px;
+    font-size: 24px;
+
+}
 
 
 /**********************************************************
@@ -263,11 +271,12 @@ footer {
 
 #promo-info-div {
     border: 2px solid #368f8b;
+    border-radius: 30px;
 }
 
 #bid-price {
     text-align: center;
-    
+
 }
 
 #promo-features-list {
