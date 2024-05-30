@@ -1,4 +1,6 @@
-Code:You Web Development Keystone Project: KQ Fashion Site
+# Code:You Web Development Keystone Project
+
+## KQ Fashion Site
 
 As some context, I completed Code:You's Data Analysis cohort in December 2023. In that time, I created the small business idea of selling hand-designed shoes from which to collect sales data, titled [Kicks Quest](https://github.com/JodieMullins/KicksQuest). 
 This repository is a continuation of that idea, showcasing a small website acting as a client-side application for customers to browse custom shoe selections and input a contact form as necessary. 
