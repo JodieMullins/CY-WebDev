@@ -15,7 +15,7 @@ Features utilized in this project:
 
 - [] Responsive Design {Best Practice} [All Pages]
 
-- [] Integrate a third-party API into your project. {REQ}
+- [] Integrate a third-party API into project. {REQ}
 
 - [x] Convert user input between two formats and display the result. (e.g. Fahrenheit to Celcius, kilograms to pounds, etc) {Intermediate} [Home](http://127.0.0.1:3000/index.html)
 
