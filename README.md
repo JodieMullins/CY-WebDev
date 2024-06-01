@@ -33,4 +33,4 @@ Legend:
 
 { Reason for Inclusion }
 
-[  Page Location of Feature ]
+[  Page Location of Feature ] represented as blue, underlined links
