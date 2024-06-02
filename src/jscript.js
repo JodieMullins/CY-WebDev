@@ -62,9 +62,9 @@ resultsHTML.onclick = function (event) {
     this.innerText = "";
 };
  ***/
-let data = ["sale", "speaker", "blue", "red", "red sole", "yellow", "green", "black", "bluetooth", "purple", "orange", "white", "gold", "silver", "metallic", "new", "brown", "sneaker", "pumps", "heels"];
+const data = ["red", "blue", "green", "yellow", "purple", "orange", "black", "white", "brown"];
 
-const autocomplete = document.getElementsByClassName("search-bars");
+const autocomplete = document.getElementById("autocomplete");
 const resultsHTML = document.getElementById("results");
 
 
@@ -74,9 +74,8 @@ autocomplete.oninput = function () {
     resultsHTML.innerHTML = "";
     if (userInput.length > 0) {
       results = getResults(userInput);
-      resultsHTML.style.display = "block";
       for (i = 0; i < results.length; i++) {
-        resultsHTML.innerHTML += "<ul>" + results[i] + "</ul>";
+        resultsHTML.innerHTML += "<li>" + results[i] + "</li>";
       }
     }
   };
@@ -91,11 +90,11 @@ autocomplete.oninput = function () {
     return results;
   }
 
-  resultsHTML.onclick = function(event) {
-    const setValue = event.target.innerText;
-    autocomplete.value = setValue;
-    this.innerHTML = "";
-  };
+resultsHTML.onclick = function (event) {
+  const setValue = event.target.innerText;
+  autocomplete.value = setValue;
+  this.innerHTML = "";
+};
 
 
 /***
