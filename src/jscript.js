@@ -2,6 +2,16 @@
 
 /***
  * 
+ *         SEARCH BAR (AUTOCOMPLETE FEATURE)
+ * 
+ ***/
+
+let autocompleteChoices = ["sale", "blue", "red", "red sole", "yellow", "green", "black", "purple", "orange", "white", "gold", "silver", "metallic", "new", "sneaker", "pumps", "heels"]
+
+
+
+/***
+ * 
  *          HOME PAGE 
  * 
  ***/

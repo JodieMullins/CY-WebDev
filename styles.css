@@ -125,6 +125,8 @@ body {
     cursor:pointer;
 }
 
+/*#autocomplete-results*/
+
 /* Magnifying Glass icon*/
 .material-symbols-outlined {
     font-variation-settings:
