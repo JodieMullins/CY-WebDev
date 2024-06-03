@@ -34,6 +34,9 @@ var server = app.listen(5000, function () {
 });
 
 
+
+
+
 /***
  * 
  *          HOME PAGE 
@@ -85,9 +88,9 @@ let remainingDays = Math.ceil(
     (dayMilliseconds)
 );
 
-let todayMessage = "Today is " + today + "."
+// let todayMessage = "Today is " + today + "."
 
-let saleMessage = "There are " + remainingDays + " days remaining until the next HUGE Halloween sale!"
+let saleMessage = ("There are " + remainingDays + " days remaining until the next HUGE Halloween sale!")
 
 
 
