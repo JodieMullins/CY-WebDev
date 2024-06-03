@@ -2,16 +2,15 @@
   "name": "cy-webdev",
   "version": "1.0.0",
   "description": "KQ Fashion site for Code:You Web Development Capstone project",
-  "main": "jscript.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon jscript.js",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jodie Mullins",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
-    "Express": "^3.0.1",
     "nodemon": "^3.1.3"
   }
 }
