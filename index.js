@@ -22,7 +22,14 @@ let shoes = [
 
 // Create GET to return a list of all shoes
 router.get('/', function (req, res, next) {
-    res.send(shoes);
+
+// create JSON envelope for data being pulled out of API    
+    res.status(200).json({
+        "status": 200,
+        "statusText": "OK",
+        "message": "All shoes retrieved.",
+        "data": shoes
+    });
 });
 
 // Configure router so all routes are prefixed with /api/v1
