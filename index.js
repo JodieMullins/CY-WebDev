@@ -11,14 +11,14 @@ let express = require('express')
 // Creates an Express application (and many other objects from this application object)
 let app = express();
 
+// pull module info
+let shoeInfo = require('./info/shoeInfo')
+
 // use the express Router object
 let router = express.Router()
-let shoes = [
-    {"id": 1, "name": "Crim"},
-    {"id": 2, "name": "Beaups"},
-    {"id": 3, "name": "Miskle"},
-    {"id": 3, "name": "Hesker"}
-];
+
+// variable holds info pulling from module
+let shoes = shoeInfo.get();
 
 // Create GET to return a list of all shoes
 router.get('/', function (req, res, next) {
