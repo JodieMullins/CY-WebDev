@@ -13,6 +13,12 @@ let app = express();
 
 // use the express Router object
 let router = express.Router()
+let shoes = [
+    {"id": 1, "name": "Crim"}
+    {"id": 2, "name": "Beaups"}
+    {"id": 3, "name": "Miskle"}
+    {"id": 3, "name": "Hesker"}
+]
 
 // Create GET to return a list of all shoes
 router.get('/', function (req, res, next) {
