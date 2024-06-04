@@ -15,6 +15,17 @@ let shoeInfo = {
                 resolve(JSON.parse(data));
             }
         });
+    },
+    getbyId: function (id, resolve, reject) {
+        fs.readFile(FILE_NAME, function (err, data)) {
+            if (err) {
+                reject(err);
+            }
+            else {
+                let shoe = JSON.parse(data).find(s => s.id == id);
+                resolve(shoe);
+            }
+        }
     }
 };
 
