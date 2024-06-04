@@ -12,23 +12,26 @@ let express = require('express')
 let app = express();
 
 // pull module info
-let shoeInfo = require('./info/shoeInfo')
+let shoeInfo = require('./info/shoeInfo');
 
 // use the express Router object
-let router = express.Router()
+let router = express.Router();
 
 // variable holds info pulling from module
-let shoes = shoeInfo.get();
+// let shoes = shoeInfo.get();
 
 // Create GET to return a list of all shoes
 router.get('/', function (req, res, next) {
 
-// create JSON envelope for data being pulled out of API    
-    res.status(200).json({
-        "status": 200,
-        "statusText": "OK",
-        "message": "All shoes retrieved.",
-        "data": shoes
+    shoeInfo.get(function (data) {
+        res.status(200).json({
+            "status":200,
+            "statusText": "OK",
+            "message": "All shoes retrieved.",
+            "data":data
+        });
+    }, function(err) {
+        next(err);
     });
 });
 

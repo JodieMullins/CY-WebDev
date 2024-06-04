@@ -1,15 +1,20 @@
+let fs = require('fs');
+
+const FILE_NAME = './assets/shoes.json';
 
 // 
 let shoeInfo = {
-    get:function() {
 
-        // hard-coded array
-        return [
-            {"id": 1, "name": "Crim"},
-            {"id": 2, "name": "Beaups"},
-            {"id": 3, "name": "Miskle"},
-            {"id": 4, "name": "Hesker"}
-        ];
+    get: function(resolve, reject) {
+
+        fs.readFile(FILE_NAME, function(err, data) {
+            if (err) {
+                reject(err);
+            }
+            else {
+                resolve(JSON.parse(data));
+            }
+        });
     }
 };
 
