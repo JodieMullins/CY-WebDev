@@ -8,7 +8,7 @@ let shoeInfo = {
             {"id": 1, "name": "Crim"},
             {"id": 2, "name": "Beaups"},
             {"id": 3, "name": "Miskle"},
-            {"id": 3, "name": "Hesker"}
+            {"id": 4, "name": "Hesker"}
         ];
     }
 };
