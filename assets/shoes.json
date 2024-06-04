@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "Crim",
+      "minbid": 350,
+      "brand": "GGG",
+      "feature": "Open-toe",
+      "imageUrl": "img/GGG-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Beaups",
+      "minbid": 550,
+      "brand": "LV",
+      "feature": "Hand-painted flowers",
+      "imageUrl": "img/LV-1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Miskle",
+      "minbid": 750,
+      "brand": "LVC",
+      "feature": "Red bottoms",
+      "imageUrl": "img/LVC-1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Hesker",
+      "minbid": 9500,
+      "brand": "NK",
+      "feature": "Visual Recording and Bluetooth",
+      "imageUrl": "img/NK-1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Phinger",
+      "minbid": 8000,
+      "brand": "NK",
+      "feature": "Audio Recording and Bluetooth",
+      "imageUrl": "img/promo-1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Navi",
+      "minbid": 7800,
+      "brand": "LVC",
+      "feature": "Red bottoms and custom electronic navigation system",
+      "imageUrl": "img/hp_tempconv.jpg"
+    }
+  ]
