@@ -52,6 +52,8 @@ let shoeInfo = {
         }
       });
     },
+
+    // PASS IN SEARCH OBJECT
     search: function (searchObject, resolve, reject) {
       fs.readFile(FILE_NAME, function (err, data) {
         if (err) {
@@ -61,6 +63,13 @@ let shoeInfo = {
           let shoes = JSON.parse(data);
           // Perform search
           if (searchObject) {
+            /**
+             * EXAMPLE SEARCH OBJECT
+             * let searchObject= {
+             * "id": 1,
+             * "name": 'A' 
+             * };
+             */
             shoes = shoes.filter(
               s => (searchObject.id ? s.id == searchObject.id : true) &&
                 (searchObject.name ? s.name.toLowerCase().indexOf(searchObject.name) >= 0 : true));
