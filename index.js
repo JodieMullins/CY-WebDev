@@ -50,24 +50,30 @@ router.get('/', function (req, res, next) {
 
 
 // Create GET/ID to return a single shoe
+// map ":id" parameter to id of json for get request
 router.get('/:id', function (req, res, next) {
+  // dynamic id parameter 
     shoeInfo.getById(req.params.id, function (data) {
+      // if real shoe object exists, 200 response
       if (data) {
         res.status(200).json({
           "status": 200,
           "statusText": "OK",
-          "message": "All shoes retrieved.",
+          "message": "Single pair of shoes retrieved.",
           "data": data
         });
       }
+      // if object does not exist, create 404 NOT FOUND 
       else {
         res.status(404).send({
           "status": 404,
           "statusText": "Not Found",
-          "message": "The shoes '" + req.params.id + "' could not be found.",
+          "message": "The pair '" + req.params.id + "' could not be found.",
           "error": {
+
+            // code property established stating NOT_FOUND
             "code": "NOT_FOUND",
-            "message": "The shoes '" + req.params.id + "' could not be found."
+            "message": "The pair '" + req.params.id + "' could not be found."
           }
         });
       }
