@@ -55,6 +55,8 @@ let shoeInfo = {
 
     // PASS IN SEARCH OBJECT
     search: function (searchObject, resolve, reject) {
+
+      //open file, get data
       fs.readFile(FILE_NAME, function (err, data) {
         if (err) {
           reject(err);
@@ -71,7 +73,9 @@ let shoeInfo = {
              * };
              */
             shoes = shoes.filter(
+              // check if Object has id value; if it does, search by ID
               s => (searchObject.id ? s.id == searchObject.id : true) &&
+              // perform case-insensitive search if object searched does indeed have name
                 (searchObject.name ? s.name.toLowerCase().indexOf(searchObject.name) >= 0 : true));
           }
   
