@@ -25,6 +25,8 @@ Features utilized in this project:
 
 - [] Implement modern interactive UI features (e.g. table/data sorting, autocomplete, drag-and-drop, calendar-date-picker, etc) {OPTIONAL} {Intermediate} 
 
+- [] Create a node.js web server using a modern framework such as Express.js or Fastify.  Serve at least one route that your app uses (must serve more than just the index.html file). {OPTIONAL} {Easy/Intermediate}
+
 -----------------------
 
 Legend: 
