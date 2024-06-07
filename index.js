@@ -49,6 +49,28 @@ router.get('/', function (req, res, next) {
 
 
 
+// Create GET/search?id=n&name=str to search for shoes by 'id' and/or 'name'
+router.get('/search', function (req, res, next) {
+  let searchObject = {
+    "id": req.query.id,
+    "name": req.query.name
+  };
+
+  shoeInfo.search(searchObject, function (data) {
+    res.status(200).json({
+      "status": 200,
+      "statusText": "OK",
+      "message": "All shoes retrieved.",
+      "data": data
+    });
+  }, function (err) {
+    next(err);
+  });
+});
+
+
+
+
 // Create GET/ID to return a single shoe
 // map ":id" parameter to id of json for get request
 router.get('/:id', function (req, res, next) {
