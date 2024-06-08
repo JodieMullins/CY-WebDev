@@ -134,15 +134,21 @@ let shoeInfo = {
       }
     });
   },
+
+  // pass in new data
   insert: function (newData, resolve, reject) {
+      // read all shoes in file currently
     fs.readFile(FILE_NAME, function (err, data) {
       if (err) {
         reject(err);
       }
       else {
+        // parse through available data for all shoes
         let shoes = JSON.parse(data);
+
+        // push new item into shoe array
         shoes.push(newData);
-        fs.writeFile(FILE_NAME, JSON.stringify(pies), function (err) {
+        fs.writeFile(FILE_NAME, JSON.stringify(shoes), function (err) {
           if (err) {
             reject(err);
           }
@@ -160,7 +166,7 @@ let shoeInfo = {
       }
       else {
         let shoes = JSON.parse(data);
-        let shoe = pies.find(s => s.id == id);
+        let shoe = shoes.find(s => s.id == id);
         if (shoe) {
           Object.assign(shoe, newData);
           fs.writeFile(FILE_NAME, JSON.stringify(shoes), function (err) {
