@@ -28,6 +28,7 @@ let shoeInfo = require('./info/shoeInfo');
 let router = express.Router();
 
 //Configure middleware to support JSON data parsing in request object
+// support passing through JSON data via body of data
 app.use(express.json());
 
 
@@ -110,7 +111,9 @@ router.get('/:id', function (req, res, next) {
 
   
 router.post('/', function (req, res, next) {
+  // put into body of request the shoe object
   shoeInfo.insert(req.body, function(data) {
+    // as long as succeeds, create 201 code and pass back data
     res.status(201).json({
       "status": 201,
       "statusText": "Created",
