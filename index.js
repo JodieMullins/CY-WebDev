@@ -179,7 +179,34 @@ router.delete('/:id', function (req, res, next) {
   });
 })
 
-
+router.patch('/:id', function (req, res, next) {
+  shoeInfo.getById(req.params.id, function (data) {
+    if (data) {
+      // Attempt to update the data
+      shoeInfo.update(req.body, req.params.id, function (data) {
+        res.status(200).json({
+          "status": 200,
+          "statusText": "OK",
+          "message": "Shoes '" + req.params.id + "' patched.",
+          "data": data
+        });
+      });
+    }
+    else {
+      res.status(404).send({
+        "status": 404,
+        "statusText": "Not Found",
+        "message": "The shoes '" + req.params.id + "' could not be found.",
+        "error": {
+          "code": "NOT_FOUND",
+          "message": "The shoes '" + req.params.id + "' could not be found."
+        }
+      });
+    }
+  }, function (err) {
+    next(err);
+  });
+})
 
 // Configure router so all routes are prefixed with /api/v1
 app.use('/api/', router);
