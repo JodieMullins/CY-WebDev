@@ -27,6 +27,9 @@ let shoeInfo = require('./info/shoeInfo');
 // use the express Router object
 let router = express.Router();
 
+//Configure middleware to support JSON data parsing in request object
+app.use(express.json());
+
 
 // variable holds info pulling from module
 // let shoes = shoeInfo.get();
