@@ -224,11 +224,16 @@ app.use('/api/', router);
 // ALL REST APIs in this server are called:
 // https://localhost:5000/api
 
+
+
+
 // ADD EXCEPTION HANDLING
 // EXCEPTION HANDLING NEEDS TO BE LAST, BEFORE SERVER APP
 
+// 4 PARAMETERS, FIRST BEING ERROR OBJECT
 app.use(function(err, req, res, next) {
   res.status(500).json({
+    // OVERRIDE STANDARD ERROR OBJECT WITH OUR OWN
     "status": 500,
     "statusText": "Internal Server Error",
     "message": err.message,
