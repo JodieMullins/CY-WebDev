@@ -168,6 +168,7 @@ let shoeInfo = {
         let shoes = JSON.parse(data);
         let shoe = shoes.find(s => s.id == id);
         if (shoe) {
+          // take everything in current pie, and change new data 
           Object.assign(shoe, newData);
           fs.writeFile(FILE_NAME, JSON.stringify(shoes), function (err) {
             if (err) {

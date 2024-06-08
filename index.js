@@ -127,9 +127,10 @@ router.post('/', function (req, res, next) {
 
 
 router.put('/:id', function (req, res, next) {
+  // goes and grabs the shoe value
   shoeInfo.getById(req.params.id, function (data) {
     if (data) {
-      // Attempt to update the data
+      // Attempt to update the data if found
       shoeInfo.update(req.body, req.params.id, function (data) {
         res.status(200).json({
           "status": 200,
@@ -140,6 +141,7 @@ router.put('/:id', function (req, res, next) {
       });
     }
     else {
+      // if shoe data was not found / nonexistent, return a 404 error code
       res.status(404).send({
         "status": 404,
         "statusText": "Not Found",
@@ -185,10 +187,13 @@ router.delete('/:id', function (req, res, next) {
   });
 })
 
+
 router.patch('/:id', function (req, res, next) {
+  // look for shoe id pass through as parameter
   shoeInfo.getById(req.params.id, function (data) {
     if (data) {
       // Attempt to update the data
+      // Will only update specific properties 
       shoeInfo.update(req.body, req.params.id, function (data) {
         res.status(200).json({
           "status": 200,
@@ -212,14 +217,27 @@ router.patch('/:id', function (req, res, next) {
   }, function (err) {
     next(err);
   });
-})
+});
 
 // Configure router so all routes are prefixed with /api/v1
 app.use('/api/', router);
 // ALL REST APIs in this server are called:
 // https://localhost:5000/api
 
+// ADD EXCEPTION HANDLING
+// EXCEPTION HANDLING NEEDS TO BE LAST, BEFORE SERVER APP
 
+app.use(function(err, req, res, next) {
+  res.status(500).json({
+    "status": 500,
+    "statusText": "Internal Server Error",
+    "message": err.message,
+    "error": {
+      "code": "INTERNAL_SERVER_ERROR",
+      "message": err.message
+    }
+  });
+});
 
 
 
