@@ -105,9 +105,23 @@ router.get('/:id', function (req, res, next) {
   });
 
 
+  
+router.post('/', function (req, res, next) {
+  shoeInfo.insert(req.body, function(data) {
+    res.status(201).json({
+      "status": 201,
+      "statusText": "Created",
+      "message": "New Pair Added.",
+      "data": data
+    });
+  }, function(err) {
+    next(err);
+  });
+})
+
 
 // Configure router so all routes are prefixed with /api/v1
-app.use('/api/', router)
+app.use('/api/', router);
 // ALL REST APIs in this server are called:
 // https://localhost:5000/api
 
