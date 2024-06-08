@@ -29,7 +29,7 @@ let shoeInfo = {
     }
 };
 */
-
+/**
 let shoeInfo = {
     get: function (resolve, reject) {
       fs.readFile(FILE_NAME, function (err, data) {
@@ -65,13 +65,17 @@ let shoeInfo = {
           let shoes = JSON.parse(data);
           // Perform search
           if (searchObject) {
-            /**
-             * EXAMPLE SEARCH OBJECT
-             * let searchObject= {
-             * "id": 1,
-             * "name": 'A' 
-             * };
-             */
+
+
+            //
+            // * EXAMPLE SEARCH OBJECT
+            // * let searchObject= {
+            // * "id": 1,
+            // * "name": 'A' 
+            // * };
+             //
+
+
             shoes = shoes.filter(
               // check if Object has id value; if it does, search by ID
               s => (searchObject.id ? s.id == searchObject.id : true) &&
@@ -83,10 +87,117 @@ let shoeInfo = {
         }
       });
     }
+
+
   };
   
+*/
 
 
+let shoeInfo = {
+  get: function (resolve, reject) {
+    fs.readFile(FILE_NAME, function (err, data) {
+      if (err) {
+        reject(err);
+      }
+      else {
+        resolve(JSON.parse(data));
+      }
+    });
+  },
+  getById: function (id, resolve, reject) {
+    fs.readFile(FILE_NAME, function (err, data) {
+      if (err) {
+        reject(err);
+      }
+      else {
+        let shoe = JSON.parse(data).find(s => s.id == id);
+        resolve(shoe);
+      }
+    });
+  },
+  search: function (searchObject, resolve, reject) {
+    fs.readFile(FILE_NAME, function (err, data) {
+      if (err) {
+        reject(err);
+      }
+      else {
+        let shoes = JSON.parse(data);
+        // Perform search
+        if (searchObject) {
+          shoes = shoes.filter(
+            s => (searchObject.id ? s.id == searchObject.id : true) &&
+              (searchObject.name ? s.name.toLowerCase().indexOf(searchObject.name) >= 0 : true));
+        }
+
+        resolve(shoes);
+      }
+    });
+  },
+  insert: function (newData, resolve, reject) {
+    fs.readFile(FILE_NAME, function (err, data) {
+      if (err) {
+        reject(err);
+      }
+      else {
+        let shoes = JSON.parse(data);
+        shoes.push(newData);
+        fs.writeFile(FILE_NAME, JSON.stringify(pies), function (err) {
+          if (err) {
+            reject(err);
+          }
+          else {
+            resolve(newData);
+          }
+        });
+      }
+    });
+  },
+  update: function (newData, id, resolve, reject) {
+    fs.readFile(FILE_NAME, function (err, data) {
+      if (err) {
+        reject(err);
+      }
+      else {
+        let shoes = JSON.parse(data);
+        let shoe = pies.find(s => s.id == id);
+        if (shoe) {
+          Object.assign(shoe, newData);
+          fs.writeFile(FILE_NAME, JSON.stringify(shoes), function (err) {
+            if (err) {
+              reject(err);
+            }
+            else {
+              resolve(newData);
+            }
+          });
+        }
+      }
+    });
+  },
+  delete: function (id, resolve, reject) {
+    fs.readFile(FILE_NAME, function (err, data) {
+      if (err) {
+        reject(err);
+      }
+      else {
+        let shoes = JSON.parse(data);
+        let index = shoes.findIndex(s => s.id == id);
+        if (index != -1) {
+          shoes.splice(index, 1);
+          fs.writeFile(FILE_NAME, JSON.stringify(shoes), function (err) {
+            if (err) {
+              reject(err);
+            }
+            else {
+              resolve(index);
+            }
+          });
+        }
+      }
+    });
+  }
+};
 
 // 
 module.exports = shoeInfo;
