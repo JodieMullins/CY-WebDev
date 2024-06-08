@@ -225,6 +225,22 @@ app.use('/api/', router);
 // https://localhost:5000/api
 
 
+/**
+function errorBuilder(err) {
+  return {
+    "status": 500,
+    "statusText": "Internal Server Error",
+    "message": err.message,
+    "error": {
+      "errno": err.errno,
+      "call": err.syscall,
+      "code": "INTERNAL_SERVER_ERROR",
+      "message": err.message
+    }
+};
+};
+
+
 
 
 // ADD EXCEPTION HANDLING
@@ -244,7 +260,15 @@ app.use(function(err, req, res, next) {
   });
 });
 
+*/
 
+
+// Configure exception logger
+app.use(errorHelper.logErrors);
+// Configure client error handler
+app.use(errorHelper.clientErrorHandler);
+// Configure catch-all exception middleware last
+app.use(errorHelper.errorHandler);
 
 // Create server to listen on port 5000
 var server = app.listen(5000, function () {
