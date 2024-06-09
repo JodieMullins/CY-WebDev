@@ -13,9 +13,14 @@ let errorHelpers = {
 */
 
 let errorHelpers = {
-  logErrors: function (err, req, res, next) {
+    
+    // MAY NEED CORRECTION
+    /* logErrorsToFile: function (err, req, res, next) { */
+  logErrorsToFile: function (err, req, res, next) {
     let errorObject = errorHelpers.errorBuilder(err);
     errorObject.requestInfo = {
+        // add request information
+        // for host, path, and app
       "hostname": req.hostname,
       "path": req.path,
       "app": req.app,
