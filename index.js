@@ -40,6 +40,7 @@ app.use(express.json());
 // Create GET to return a list of all shoes
 router.get('/', function (req, res, next) {
 
+  // if goes to get and returns valid request, return 200 response code to signify success
     shoeInfo.get(function (data) {
         res.status(200).json({
             "status":200,
@@ -61,7 +62,9 @@ router.get('/search', function (req, res, next) {
     "name": req.query.name
   };
 
+  // go through the shoe JSON object and search for requested data
   shoeInfo.search(searchObject, function (data) {
+    // succeessfully retrieving data will display 200 response with message as specified 
     res.status(200).json({
       "status": 200,
       "statusText": "OK",
@@ -158,7 +161,7 @@ router.put('/:id', function (req, res, next) {
   });
 })
 
-
+// create delete response
 router.delete('/:id', function (req, res, next) {
   shoeInfo.getById(req.params.id, function (data) {
     if (data) {

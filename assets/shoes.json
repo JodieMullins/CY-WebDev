@@ -46,5 +46,135 @@
       "brand": "LVC",
       "feature": "Red bottoms and custom electronic navigation system",
       "imageUrl": "img/hp_tempconv.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Blana",
+      "minbid": 680,
+      "brand": "GGG",
+      "feature": "Asymmetrical styled floral high heels with belt clasps and zipper hardware",
+      "imageUrl": "img/GGG-2.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Zaw",
+      "minbid": 870,
+      "brand": "GGG",
+      "feature": "Hand-painted pumps",
+      "imageUrl": "img/GGG-3.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Yelume",
+      "minbid": 560,
+      "brand": "GGG",
+      "feature": "Hand-painted heels",
+      "imageUrl": "img/GGG-4.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Beleur",
+      "minbid": 580,
+      "brand": "GGG",
+      "feature": "Hand-painted heels",
+      "imageUrl": "img/GGG-5.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Rehi",
+      "minbid": 8400,
+      "brand": "LV",
+      "feature": "Visual Recording and Bluetooth",
+      "imageUrl": "img/LV-2.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Eriphluffers",
+      "minbid": 9750,
+      "brand": "LV",
+      "feature": "Air pumps",
+      "imageUrl": "img/LV-3.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Ampliflyers",
+      "minbid": 18940,
+      "brand": "LV",
+      "feature": "Audio Recording and Bluetooth-enabled Guitar Amplifiers",
+      "imageUrl": "img/LV-4.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Libleu",
+      "minbid": 580,
+      "brand": "LV",
+      "feature": "Light up at Raves",
+      "imageUrl": "img/LV-5.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Flomst",
+      "minbid": 9750,
+      "brand": "LVC",
+      "feature": "Hand-painted red bottoms with floral cut-out accents",
+      "imageUrl": "img/LVC-2.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Bloomoras",
+      "minbid": 460,
+      "brand": "LVC",
+      "feature": "Hand-painted pumps",
+      "imageUrl": "img/LVC-3.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Kvet",
+      "minbid": 8940,
+      "brand": "LVC",
+      "feature": "Hand-painted red bottoms",
+      "imageUrl": "img/LVC-4.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Redooms",
+      "minbid": 8999,
+      "brand": "LVC",
+      "feature": "Phone chargers",
+      "imageUrl": "img/LVC-5.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Dunkers",
+      "minbid": 980,
+      "brand": "NK",
+      "feature": "Classics",
+      "imageUrl": "img/NK-2.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Mukes",
+      "minbid": 9577,
+      "brand": "NK",
+      "feature": "Music players",
+      "imageUrl": "img/NK-3.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Plukes",
+      "minbid": 9777,
+      "brand": "NK",
+      "feature": "Music players",
+      "imageUrl": "img/NK-4.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Dunker Retros",
+      "minbid": 890,
+      "brand": "NK",
+      "feature": "Classics",
+      "imageUrl": "img/NK-5.jpg"
     }
+
+    
   ]
