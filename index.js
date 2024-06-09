@@ -22,7 +22,8 @@ let app = express();
 // pull module info
 let shoeInfo = require('./info/shoeInfo');
 
-
+// bring in export in case of errors
+let errorHelper = require('./helpers/errorHelpers');
 
 // use the express Router object
 let router = express.Router();
