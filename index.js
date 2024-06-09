@@ -269,7 +269,7 @@ app.use(function(err, req, res, next) {
 
 // Configure exception logger
 // WHY DOES IT SAY app.use(errorHelper.logErrorsToConsole);   on Pluralsight???????????????????
-app.use(errorHelper.logErrors);
+//app.use(errorHelper.logErrorsToConsole);
 
 // Configure exception logger to file
 app.use(errorHelper.logErrorsToFile);

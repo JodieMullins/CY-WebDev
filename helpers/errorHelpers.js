@@ -13,7 +13,14 @@ let errorHelpers = {
 */
 
 let errorHelpers = {
-    
+/*
+    logErrorsToConsole: function (err, req, res, next) {
+        console.error("Log Entry: " + JSON.stringify(errorHelpers.errorBuilder(err)));
+        console.error("*".repeat(80));
+        next(err)
+    },
+    */
+   
     // MAY NEED CORRECTION
     /* logErrorsToFile: function (err, req, res, next) { */
   logErrorsToFile: function (err, req, res, next) {
