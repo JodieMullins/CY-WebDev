@@ -1,18 +1,10 @@
 const logRepo = require("../repos/logRepo");
 
 
-/*
-let errorHelpers = {
-    logErrorsToConsole: function (err, req, res, next) {
-        console.error("Log Entry: " + JSON.stringify(errorHelpers.errorBuilder(err)
-        console.error("*".repeat(80));
-        next(err)
-        ))
-    }
-}
-*/
 
 let errorHelpers = {
+
+    // CORRESPONDING TO INDEX.JS
 /*
     logErrorsToConsole: function (err, req, res, next) {
         console.error("Log Entry: " + JSON.stringify(errorHelpers.errorBuilder(err)));
@@ -20,7 +12,7 @@ let errorHelpers = {
         next(err)
     },
     */
-   
+
     // MAY NEED CORRECTION
     /* logErrorsToFile: function (err, req, res, next) { */
   logErrorsToFile: function (err, req, res, next) {
