@@ -4,7 +4,7 @@ const logRepo = require("../repos/logRepo");
 
 let errorHelpers = {
 
-    // CORRESPONDING TO INDEX.JS
+    // CORRESPONDING TO SERVER.JS
 /*
     logErrorsToConsole: function (err, req, res, next) {
         console.error("Log Entry: " + JSON.stringify(errorHelpers.errorBuilder(err)));
@@ -54,7 +54,7 @@ let errorHelpers = {
     res.status(500).json(errorHelpers.errorBuilder(err));
   },
 
-  // remove from index.js
+  // remove from server.js
   errorBuilder: function (err) {
     return {
       "status": 500,
