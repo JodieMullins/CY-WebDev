@@ -297,7 +297,6 @@ let run = app.listen(PORT, (err) => {
   }
 );
 
-run();
 
 // Create server to listen on port 5000
 var server = app.listen(5000, function () {
