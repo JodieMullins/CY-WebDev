@@ -71,9 +71,10 @@
             <h1>REACH OUT</h1>
             <p id="contact-descr" class="h1-descriptions"> Help us improve! We'd love to hear from you! </p>
 
-            <form id="contact-form">
 
-            
+            <form id="contact-form" method="post" action="" enctype="multipart/form-data" >
+        
+            <input type="file" name="user-contact">
             
                 <fieldset id="person-contacting" class="contact-fieldsets">
                     <label id="contact-name-label" for="name" class="contact-labels">Enter Your Full Name: <input id="contact-name" type="text" placeholder="Full Name Here" /></label>
@@ -138,7 +139,13 @@
             <footer id="hp-foot" > Demo Site by: <a class="foot-link" href="https://www.linkedin.com/in/jodiepdm">Jodie Mullins</a></footer>
         </div>
 
-    <script src="jscript.js"></script>
+    <script src="jscript.js">
+
+
+     //   const files = document.getElementById("contact-form").files;
+     //   const farray = files[0]; // where farray is a file
+  
+    </script>
 
     </body> <!-- end body -->
 
