@@ -229,7 +229,12 @@ app.use('/api/', router);
 // https://localhost:5000/api
 
 
+
+
 /**
+ * 
+ *  MOVE TO errorHelpers.js
+ * 
 function errorBuilder(err) {
   return {
     "status": 500,
@@ -243,9 +248,6 @@ function errorBuilder(err) {
     }
 };
 };
-
-
-
 
 // ADD EXCEPTION HANDLING
 // EXCEPTION HANDLING NEEDS TO BE LAST, BEFORE SERVER APP
@@ -269,6 +271,7 @@ app.use(function(err, req, res, next) {
 
 // Configure exception logger
 // WHY DOES IT SAY app.use(errorHelper.logErrorsToConsole);   on Pluralsight???????????????????
+//app.use(errorHelper.logErrors);
 //app.use(errorHelper.logErrorsToConsole);
 
 
