@@ -10,14 +10,14 @@
 
 
 //Bring in the express server and create application
-let express = require('express');
+const express = require('express');
 
 
 
 // Creates an Express application (and many other objects from this application object)
-let app = express();
+const app = express();
 
-
+const PORT = 3000;
 
 // pull module info
 let shoeInfo = require('./info/shoeInfo');
@@ -26,7 +26,7 @@ let shoeInfo = require('./info/shoeInfo');
 let errorHelper = require('./helpers/errorHelpers');
 
 // use the express Router object
-let router = express.Router();
+const router = express.Router();
 
 //Configure middleware to support JSON data parsing in request object
 // support passing through JSON data via body of data
@@ -271,16 +271,36 @@ app.use(function(err, req, res, next) {
 // WHY DOES IT SAY app.use(errorHelper.logErrorsToConsole);   on Pluralsight???????????????????
 //app.use(errorHelper.logErrorsToConsole);
 
+
+
 // Configure exception logger to file
 app.use(errorHelper.logErrorsToFile);
+
+
 
 // Configure client error handler
 app.use(errorHelper.clientErrorHandler);
 
+
+
 // Configure catch-all exception middleware last
 app.use(errorHelper.errorHandler);
+
+
+
+// Create Server to listen on port 3000
+let run = app.listen(PORT, (err) => {
+  if(!err)
+    console.log("Server is running and App is currently listening on port " + PORT)
+  else
+    console.log("ERROR has occurred: " + err);
+  }
+);
+
+run();
 
 // Create server to listen on port 5000
 var server = app.listen(5000, function () {
     console.log('Node Server is running on http://localhost:5000.');
 });
+
