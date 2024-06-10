@@ -10,7 +10,7 @@
 
 
 //Bring in the express server and create application
-let express = require('express')
+let express = require('express');
 
 
 
@@ -127,7 +127,7 @@ router.post('/', function (req, res, next) {
   }, function(err) {
     next(err);
   });
-})
+});
 
 
 router.put('/:id', function (req, res, next) {
@@ -159,7 +159,7 @@ router.put('/:id', function (req, res, next) {
   }, function(err) {
     next(err);
   });
-})
+});
 
 // create delete response
 router.delete('/:id', function (req, res, next) {
@@ -189,7 +189,7 @@ router.delete('/:id', function (req, res, next) {
   }, function(err) {
     next(err);
   });
-})
+});
 
 
 router.patch('/:id', function (req, res, next) {
