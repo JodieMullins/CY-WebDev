@@ -14,7 +14,7 @@ function temperatureConverter(valNum) {
     // grab this item and display the output of 
     // an equation to translate Celcius into Fahrenheit 
     document.getElementById("outputFahrenheit").innerText=(valNum * 1.8) +32 ;
-}
+};
 
 
 
@@ -37,7 +37,7 @@ if (today.getMonth() == 9 && today.getDate() > 31) {
 
     // add another year until the sale date
     saleYear = saleYear + 1;
-}
+};
 
 // create variable saleDate and set it equal to October 31st of closest upcoming sale
 let saleDate = new Date(saleYear, 9, 31);
@@ -47,12 +47,11 @@ let dayMilliseconds = 1000 * 60 * 60 * 24;
 
 // Find remaining days until next sale
 let remainingDays = Math.ceil(
-    (saleDate.getTime() - today.getTime()) /
-    (dayMilliseconds)
+    (saleDate.getTime() - today.getTime()) / (dayMilliseconds)
 );
 
 // let todayMessage = "Today is " + today + "."
 
-let saleMessage = ("There are " + remainingDays + " days remaining until the next HUGE Halloween sale!")
+let saleMessage = ("There are " + remainingDays + " days remaining until the next HUGE Halloween sale!");
 
-document.getElementById("countdown-here").innerText = saleMessage
+document.getElementById("countdown-here").innerText = saleMessage;

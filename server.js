@@ -291,7 +291,7 @@ app.use(errorHelper.errorHandler);
 // Create Server to listen on port 3000
 let run = app.listen(PORT, (err) => {
   if(!err)
-    console.log("Server is running and App is currently listening on port " + PORT)
+    console.log("Server is running and App is currently listening on port " + PORT + " at http://localhost:3000/")
   else
     console.log("ERROR has occurred: " + err);
   }
