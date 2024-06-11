@@ -274,6 +274,14 @@ app.use(function(err, req, res, next) {
 //app.use(errorHelper.logErrors);
 //app.use(errorHelper.logErrorsToConsole);
 
+/** 
+ *    IS THIS HOW I WOULD CALL PROMO PAGE ORDINARILY??
+ * 
+app.get('/promo', (req, res)=>{
+  res.set('Content-Type', 'text/html');
+  res.status(200).send('./promo.html');
+});
+*/
 
 
 // Configure exception logger to file
