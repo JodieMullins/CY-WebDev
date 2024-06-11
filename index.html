@@ -88,6 +88,17 @@
                         <h3 id="hp-temp-question"> Is it hot enough to wear those shoes?!</h3>
     
                             <p id="cel" class="inputting-space">
+                                <!--
+                                            A <label> isn't associated 
+                                                with a form field.
+
+                                                
+                                            To fix this issue, 
+                                            nest the <input> in the <label> 
+                                                or provide a for attribute 
+                                                on the <label> that matches a form field id
+
+                                -->
                             <label id="label-c-temp">Celsius</label>
                             <input id="inputCelsius" type="number" placeholder="C"
                             oninput="temperatureConverter(this.value)"
