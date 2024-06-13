@@ -33,7 +33,13 @@ function temperatureConverter(valNum) {
 // Where do I want to pull this image from? 
 // const crim = 
 
+// on click, I want the image to shrink or otherwise thumbnail 
+// on click, name and min bid price should appear
 
+// or, or , or, ORRRRRR
+// on click
+// Create 2 rectangles overlapping the shoe image
+// name and min bid price
 
 
 
