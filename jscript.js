@@ -21,6 +21,26 @@ function temperatureConverter(valNum) {
 
 
 
+
+
+
+/***
+ * 
+ *          SEASONAL / DESIGNS 
+ * 
+ ***/
+
+// Where do I want to pull this image from? 
+// const crim = 
+
+
+
+
+
+
+
+
+
 /***
  * 
  *          PROMO 
