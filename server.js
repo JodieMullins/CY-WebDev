@@ -311,6 +311,6 @@ let run = app.listen(PORT, (err) => {
 
 // Create server to listen on port 5000
 var server = app.listen(5000, function () {
-    console.log('Node Server for API is running on http://localhost:5000.');
+    console.log('Node Server for API is running on http://localhost:5000/api.');
 });
 
