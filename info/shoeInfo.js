@@ -1,5 +1,7 @@
+// use the file system module
 let fs = require('fs');
 
+// provide directory and file for fs module to modify
 const FILE_NAME = './assets/shoes.json';
 
 /**
