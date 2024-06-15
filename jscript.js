@@ -47,9 +47,6 @@ function temperatureConverter(valNum) {
 
 
 
-
-
-
 /***
  * 
  *          PROMO 
