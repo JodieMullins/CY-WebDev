@@ -65,6 +65,16 @@ if (today.getMonth() == 9 && today.getDate() > 31) {
     saleYear = saleYear + 1;
 };
 
+// if today is Halloween exactly
+if (today.getMonth() == 9 && today.getDate() === 31) {
+
+    // box should have a message
+   let saleMessage = "TODAY IS THE SALE! CHECK OUT THE SEASONAL PAGE!"
+   
+   // display message exclaiming day of sale
+   document.getElementById("countdown-here").innerText = saleMessage;
+};
+
 // create variable saleDate and set it equal to October 31st of closest upcoming sale
 let saleDate = new Date(saleYear, 9, 31);
 
