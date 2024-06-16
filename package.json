@@ -4,9 +4,10 @@
   "description": "KQ Fashion site for Code:You Web Development Capstone project",
   "main": "server.js",
   "scripts": {
-    "build": "npm install",
+    "build": "npm install", 
     "start": "nodemon server.js",
     "dev": "vite dev",
+    "preview":"vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jodie Mullins - https://github.com/JodieMullins",
