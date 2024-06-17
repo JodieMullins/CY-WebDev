@@ -12,12 +12,13 @@
 //Bring in the express server and create application
 const express = require('express');
 
-
+// Establish Port
+// Specify to pull PORT from environment OR if unavailable, default to PORT 3000
+const PORT = process.env.PORT || 3000;
 
 // Creates an Express application (and many other objects from this application object)
 const app = express();
 
-const PORT = 3000;
 
 // pull module info
 let shoeInfo = require('./info/shoeInfo');
