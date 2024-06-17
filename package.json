@@ -18,5 +18,9 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.3"
+  },
+  "nodemonConfig":{
+    "restartable": "rr",
+    "delay": 2500
   }
 }
