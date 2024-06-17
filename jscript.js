@@ -41,8 +41,34 @@ function temperatureConverter(valNum) {
 // Create 2 rectangles overlapping the shoe image
 // name and min bid price
 
+const imgdata = ['GGG-1']
+const imgContainer = document.getElementById('seasonal-images')
+
+const bidImages = (imgs) => {
+    imgs.forEach(img => {
+        const parentdiv = document.createElement('div')
+        parentdiv.id = 'div' + img
+        parentdiv.className = 'divs-seasonal-images'
+        
+        // create image with id
+        const seasonalImage = document.createElement('img')
+        seasonalImage.id = img
+        seasonalImage.class = 'seasonal-selections'
+        seasonalImage.src = 'img/' + img + '.jpg'
+
+        parentdiv.appendChild(seasonalImage)
+        imgContainer.appendChild(parentdiv)
+    });
+
+};
+
+bidImages(imgdata);
 
 
+<div id="div-ggg1" class="divs-seasonal-images">
+ //  create object to add alt 
+    <img id="GGG-1" class="seasonal-selections" src="img/GGG-1.jpg" alt="AI-generated pair of open-toe pumps with red interior, tan exterior soles; heels are gradient dark to light blue with varying white, light blue, dark blue, to black straps covered in hand-painted floral designs of oranges, blues, lavenders. and creams." />
+</div> 
 
 
 
