@@ -17,13 +17,15 @@ Features within this project:
 
 - [] Integrate a third-party API into project. {REQ}
 
+- [] Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app. {Easy} [Seasonal](http://127.0.0.1:3000/seasonal.html)
+
 - [x] Convert user input between two formats and display the result. (e.g. Fahrenheit to Celcius, kilograms to pounds, etc) {Intermediate} [Home](http://127.0.0.1:3000/index.html)
 
 - [x] Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event) {Intermediate} [Promo](http://127.0.0.1:3000/promo.html)
 
 - [] Create a form and store the submitted values using an external API (e.g. a contact form, survey, etc). {Intermediate} [Contact](http://127.0.0.1:3000/contact.html)
 
-- [] Implement modern interactive UI features (e.g. table/data sorting, autocomplete, drag-and-drop, calendar-date-picker, etc) {OPTIONAL} {Intermediate} 
+- [] Interact with a database to store and retrieve information (e.g. MySQL, MongoDB, etc). {OPTIONAL} {Intermediate} 
 
 - [] Create a node.js web server using a modern framework such as Express.js or Fastify.  Serve at least one route that your app uses (must serve more than just the index.html file). {OPTIONAL} {Easy/Intermediate}
 
