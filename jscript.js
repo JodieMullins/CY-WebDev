@@ -41,8 +41,24 @@ function temperatureConverter(valNum) {
 // Create 2 rectangles overlapping the shoe image
 // name and min bid price
 
-const imgdata = ['GGG-1']
-const imgContainer = document.getElementById('seasonal-images')
+// pull array of images
+// create image objects complete with alt txt
+
+// >>> MOVE alt txt to API descriptions
+
+
+
+
+
+/** 
+// create javascript variable
+// set javascript variable equal to an array
+// make the array contain a single image of the title
+const imgdata = ['GGG-1'];
+
+// create javascript object that grabs an Id
+// 
+const imgContainer = document.getElementById('seasonal-images');
 
 const bidImages = (imgs) => {
     imgs.forEach(img => {
@@ -62,13 +78,22 @@ const bidImages = (imgs) => {
 
 };
 
+// call function on array
 bidImages(imgdata);
 
+*/
 
+
+
+/** 
 <div id="div-ggg1" class="divs-seasonal-images">
  //  create object to add alt 
     <img id="GGG-1" class="seasonal-selections" src="img/GGG-1.jpg" alt="AI-generated pair of open-toe pumps with red interior, tan exterior soles; heels are gradient dark to light blue with varying white, light blue, dark blue, to black straps covered in hand-painted floral designs of oranges, blues, lavenders. and creams." />
 </div> 
+*/
+
+
+
 
 
 
