@@ -1,3 +1,16 @@
+/*
+> npm install -D tailwindcss postcss autoprefixer
+   then
+  > npx tailwindcss
+*/
+
+/*
+leave these here after Tailwinds install
+@tailwind base;
+@tailwind components;
+@taliwind utilities;
+*/
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
