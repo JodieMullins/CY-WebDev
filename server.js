@@ -9,6 +9,14 @@
 // reference https://www.npmjs.com/package/express
 
 
+import express from "express";
+/** 
+ *  IMPORT FOR ROUTERS
+import { shoesRouter } from "./shoes/shoes.router"
+import { customersRouter } from "./customers/customers.router"
+import { ordersRouter } from "./orders/orders.router"
+*/
+
 //Bring in the express server and create application
 const express = require('express');
 
@@ -18,6 +26,22 @@ const PORT = process.env.PORT || 3000;
 
 // Creates an Express application (and many other objects from this application object)
 const app = express();
+
+// register routes
+const apiRouter = express.Router();
+
+apiRouter.use("/shoes", shoesRouter);
+apiRouter.use("/customers", customersRouter);
+apiRouter.use("/orders", ordersRouter); // ROUTING
+
+export const routes = express.Router();
+routes.use("/api", apiRouter);
+// ordersRouter.get("/:id", async(req, res)) >>> REST VERB
+
+// success message
+routes.get("/", (req, res) => {
+  res.status(200).send("<h1>Server is ready!</h1>");
+});
 
 
 // pull module info
@@ -300,7 +324,7 @@ app.use(errorHelper.errorHandler);
 
 
 
-// Create Server to listen on port 3000
+// Create Server to listen on port 3000 for web page
 let run = app.listen(PORT, (err) => {
   if(!err)
     console.log("Server is running and App is currently listening on port " + PORT + " at http://localhost:3000/")
@@ -310,7 +334,7 @@ let run = app.listen(PORT, (err) => {
 );
 
 
-// Create server to listen on port 5000
+// Create server to listen on port 5000 to interact with API
 var server = app.listen(5000, function () {
     console.log('Node Server for API is running on http://localhost:5000/api.');
 });

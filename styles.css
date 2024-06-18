@@ -28,8 +28,8 @@ body {
 
 .header-logo-a {
     display:flex;
-    width: fit-content;
     width: -moz-fit-content;
+    width: fit-content;    
     justify-content:start;
 }
 
