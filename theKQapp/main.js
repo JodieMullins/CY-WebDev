@@ -2,6 +2,8 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
+const express = require('express');
+const debug = require('debug')('app');
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -22,3 +24,15 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
+
+const app = express();
+
+app.get('/', (req, res) => {
+    req.send('Hello from my app');
+})
+
+app.listen(3000, () =>{
+    console.log('listening on port 3000')
+});
+
+
