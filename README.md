@@ -17,13 +17,13 @@ Features within this project:
 
 - [] Integrate a third-party API into project. {REQ}
 
-- [] Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app. {Easy} [Seasonal](http://127.0.0.1:3000/seasonal.html)
+- [] Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app. {Easy} [Seasonal]
 
-- [x] Convert user input between two formats and display the result. (e.g. Fahrenheit to Celcius, kilograms to pounds, etc) {Intermediate} [Home](http://127.0.0.1:3000/index.html)
+- [x] Convert user input between two formats and display the result. (e.g. Fahrenheit to Celcius, kilograms to pounds, etc) {Intermediate} [Home]
 
-- [x] Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event) {Intermediate} [Promo](http://127.0.0.1:3000/promo.html)
+- [x] Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event) {Intermediate} [Promo]
 
-- [] Create a form and store the submitted values using an external API (e.g. a contact form, survey, etc). {Intermediate} [Contact](http://127.0.0.1:3000/contact.html)
+- [] Create a form and store the submitted values using an external API (e.g. a contact form, survey, etc). {Intermediate} [Contact]
 
 - [] Interact with a database to store and retrieve information (e.g. MySQL, MongoDB, etc). {OPTIONAL} {Intermediate} 
 
@@ -37,4 +37,4 @@ Legend:
 
 { Reason for Inclusion }
 
-[  Page Location of Feature ] represented as blue, underlined links
+[Page Location of Feature] 
